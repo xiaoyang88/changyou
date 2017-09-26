@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>社区</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/community.css">
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+<body>
+<%- include ../util/header-Community.ejs %><div>
+    <div class="ask_top_detail"></div>
+    <div style="width: 980px;margin: auto">
+        <div>
+            <div id="question">
+                <ul id="myTab" class=" " role="tablist">
+                    <li style="margin-top: 30px">
+                        <a href="#rule" role="tab" data-toggle="pill"
+                           style="font-size: 20px;letter-spacing: 4px;">最新问题</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="rule">
+                        <% if(QuestionAnswershow.length > 0){ %>
+                        <% for(var i = 0;i < QuestionAnswershow.length;i++) { %>
+
+                        <div class="tab-pane fade in active" id="bulletin">
+                            <div class="Question">
+                                <div class="HeadPortrait" style="margin-top: 20px;margin-left: 25px">
+                                    <a href="/users/otherhome_note?username=<%- QuestionAnswershow[i].UserName %>"><img
+                                                src="/upload/<%= QuestionAnswershow[i].UserPic %>" alt=""></a>
+                                    <p style="display: inline-block;font-size: 18px;margin-top:20px;font-weight: bold;color: #666666">
+                                        <a href="/users/otherhome_note?username=<%- QuestionAnswershow[i].UserName %>">
+                                            <%- QuestionAnswershow[i].UserName %>
+                                        </a>
+                                    </p>
+                                    <span style="font-size: 10px;color: #666666;margin-left: 5px">提了一个问题</span>
+                                </div>
+                                <div class="QuestionName">
+                                    <a href="/users/QuestionDetailShow?QuestionId=<%= QuestionAnswershow[i].QuestionId%>" style="font-size: 18px">
+                                        <%- QuestionAnswershow[i].QuestionName %>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="Answer">
+                                <div class="content">
+                                    <div class="AnswerContent">
+                                        <%- QuestionAnswershow[i].QuestionContent %>
+                                    </div>
+                                    <div class="info">
+                                        <span class="time">发表于&nbsp;&nbsp;&nbsp;<%- QuestionAnswershow[i].QuestionTime %></span>
+                                    </div>
+                                </div>
+                                <!--<hr class="hr1">-->
+                            </div>
+                        </div>
+                        <% } %>
+                        <% } %>
+                        <div class="tab-pane fade" id="forum">
+                            <div class="tab-pane fade in active" id="bulletin">
+                                <div class="Question">
+                                    <div class="HeadPortrait">
+                                        <img src="/images/q1.jpeg"></div>
+                                    <div class="QuestionName"><a href="">世界上有哪些著名的帐篷酒店？</a></div>
+                                </div>
+                                <div class="Answer">
+                                    <div class="HeadPortrait">
+                                        <img src="/images/q2.jpeg">
+                                    </div>
+                                    <div class="content">
+                                        <div id="username"><a href="">左边的猫右</a></div>
+                                        <div class="tu"><img src="/images/a1.png"></div>
+                                        <div class="AnswerContent">
+                                            不知道从什么时候起，帐篷酒店就突然火起来了，
+                                            而且动辄都是高端大气上档次的feel！下面是比较火的几家：这是大名鼎鼎的四季酒店在金三角地区的代表性一员，以游猎为主题~
+                                            帐篷酒店坐落于索拉之外的一处隐蔽的河边丛林中，想要前往，必须要搭乘渡船穿过神秘的洛克河。
+
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <ul class="">
+                                            <li><span class="time">2016-09-07 17:13</span></li>
+                                            <li>赞 (1542)</li>
+                                            <li>关注 (7)</li>
+                                            <li>回答 (6)</li>
+                                            <li> 浏览 (8087)</li>
+                                        </ul>
+                                    </div>
+                                    <hr class="hr1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <a href="/users/CQuestion">
+                    <button class="btn  btn-lg" id="btnWen">我要提问</button>
+                </a>
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="/images/S-2.jpeg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="/images/S-1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="/images/S-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $('.carousel').carousel()
+                </script>
+                <div id="right-middle">
+                    <p>共有1个问题 10个人参与</p>
+                </div>
+                <div id="right-footer">
+                    <div id=" right-footer-p"><p>问答&nbsp;&nbsp;&nbsp;话题</p>
+                        <hr id="right-footer-hr">
+                    </div>
+                    <div id="footer-top">
+                        <img src="/images/f-1.png">
+                        <p><a href="">摄影</a></p>
+                        <div class="content"><span>摄影，就是要屏住呼吸，集中全身上下每一个细胞，捕捉稍纵即逝的瞬间。</span></div>
+                        <hr>
+                    </div>
+                    <div id="footer-top">
+                        <img src="/images/f-2.jpeg">
+                        <p><a href="">美食</a></p>
+                        <div class="content"><span>旅行少不了美食，再艰难的行程也挡不住一颗吃货的心</span></div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include ../util/footer.ejs %>
+<script src="/javascripts/jquery-3.1.0.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

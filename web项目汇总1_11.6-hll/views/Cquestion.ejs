@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我要提问</title>
+    <link rel="stylesheet" href="/stylesheets/Cquestion.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+<body>
+<header>
+    <%- include ../util/header-Community.ejs %>
+</header>
+<section style="margin: auto">
+    <div id="section-left">
+        <form role="form" action="/users/insertJudge" method="post">
+            <div class="form-group" id="section-form">
+                <p style="font-size: 20px;margin-top: 10px">问题标题</p>
+                <input class="form-control input-lg" type="text" name="QuestionName" id="QuestionName"
+                       placeholder="标题不小于10个字">
+                <label style="margin-top: 15px">0/80个字</label>
+            </div>
+
+            <div id="section-detailed">
+                <img src="/images/CQuestion/1.png" id="section-img" onmouseout=" UE.getEditor('editor').setShow()"
+                     onmouseover=" UE.getEditor('editor').setHide()">
+                <p>问题详细内容</p></div>
+            <div>
+                <div id="editor" type="text/plain" style="width:660px;height:300px;"></div>
+            </div>
+            <div id="btns">
+                <input type="submit" class="btn" onclick="getContent()" value="发布问题">
+            </div>
+        </form>
+    </div>
+    <div id="section-right">
+        <div id="right-header"><p>提问的正确姿势</p></div>
+        <div class="right-content">
+            <p>1.问题要【具体】【真实】【诚恳】，问</p>
+            <p>题较多，需全面阐述时，可以添加问题补</p>
+            <p>充。与旅行无关的提问将被删除。</p>
+
+        </div>
+        <div class="right-content">
+            <p>2.给问题添加目的地，并打上正确的标签</p>
+            <p> 将有助于更快地获得回答。</p>
+
+        </div>
+    </div>
+</section>
+<div id="insert"></div>
+<%- include ../util/footer.ejs%>
+
+<script src="/javascripts/uedtior.js"></script>
+<script src="/javascripts/Cquestion.js"></script>
+<script src="/javascripts/jquery-3.1.0.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

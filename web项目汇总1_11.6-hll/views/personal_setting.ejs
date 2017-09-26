@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/personal_setting.css" type="text/css">
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+
+<body>
+<header>
+    <%- include ../util/header-All.ejs %>
+</header>
+<section class="personal_setting">
+    <div class="UserPic_divH">
+        <div class="Pic_divHL">
+            <img src="/upload/<%=UserInfoData[0].UserPic%>" alt="">
+        </div>
+        <div class="UserName_divH"><span><%=UserInfoData[0].UserName%></span></div>
+
+    </div>
+    <div class="navbarH">
+        <ul>
+            <a href="/users/myhome_note">
+                <li class="  navbarH_li">我的游记</li>
+            </a>
+            <a href="/users/myhome_question">
+                <li class="navbarH_li">我的问答</li>
+            </a>
+            <a href="/users/myhome_exchange">
+                <li class="navbarH_li">我的兑换</li>
+            </a>
+            <a href="/users/personal_setting">
+                <li class="active">我的资料设置</li>
+            </a>
+        </ul>
+    </div>
+    <div class="sec_left">
+        <div id="sec_left_nav">
+            <ul>
+                <li id="li0" class="sec_li">
+                    <div class="sec_left1"></div>
+                    我的信息
+                </li>
+                <li id="li1">
+                    <div class="sec_left2"></div>
+                    我的头像
+                </li>
+                <li id="li2">
+                    <div class="sec_left3"></div>
+                    收获地址
+                </li>
+            </ul>
+        </div>
+        <div class="sec_left_Con">
+            <!--个人信息设置-->
+            <div id="li0_Con" class="sec_right_Con" style="display: block">
+                <div class="detail_header">
+                    <h2>我的信息修改</h2>
+                    <hr style="border-bottom: 1px solid rgba(0, 0, 0, 0.2);">
+                    <form action="/users/myInfoUpDate_H" method="post">
+                        <table>
+                            <tr>
+                                <td class="td1">用户名：</td>
+                                <td style="padding-top: 12px;padding-left: 5px">
+                                    <span style=""><%=UserInfoData[0].UserName%> </span>
+                                </td>
+                            </tr>
+                            <tr class="warn_tr">
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">性别：</td>
+                                <td class="td2">
+                                    <span class="radio_input">
+                                        <input type="radio" name="sex" checked value="男">
+                                    </span>男
+                                    <span class="radio_input">
+                                        <input type="radio" name="sex" value="女">
+                                    </span>女
+                                </td>
+                            </tr>
+                            <tr class="warn_tr">
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Tel：</td>
+                                <td>
+                                    <input type="text" placeholder="请输入新的电话号码" name="Tel">
+                                </td>
+                            </tr>
+                            <tr class="warn_tr">
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">原密码：</td>
+                                <td><input type="password" placeholder="请输入原始密码" ></td>
+                            </tr>
+                            <tr class="warn_tr">
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">新密码：</td>
+                                <td><input type="password" placeholder="请输入新密码" id="newPwd" name="newPwd" onkeyup="pwdUpdate()"></td>
+                            </tr>
+                            <tr class="warn_tr">
+                                <td></td>
+                                <td><span id="errMessage"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">确认密码：</td>
+                                <td><input type="password" id="pwd" placeholder="请再次输入新密码" onkeyup="pwdUpdate2()" ></td>
+                            </tr>
+                            <tr class="warn_tr">
+                                <td></td>
+                                <td><span id="errMes"><!--两次密码输入不一致！--></span></td>
+                            </tr>
+                        </table>
+                        <div class="sub_btn">
+                            <input type="submit" value="保存"  id="Subbtn_H">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div id="li1_Con" class="sec_right_Con" style="display:none">
+                <div class="detail_header">
+                    <h2>我的头像更改</h2>
+                    <hr style="border-bottom: 1px solid rgba(0, 0, 0, 0.2);">
+
+                </div>
+                <div class="sub_btn2">
+                    <img src="/upload/<%=UserInfoData[0].UserPic%>" alt="">
+                    <form method='post' action='javascript:;' role="form" id="frmUploadFile">
+                        <input type="file" name="files" id="myFile">
+                        <span class="tips">(支持jpg、png、jpeg、bmp，图片大小5M以内)</span>
+                        <button onClick="uploadFile()">确认更改</button>
+                        <span id="spanMessage"></span>
+                    </form>
+                </div>
+            </div>
+            <div id="li2_Con" class="sec_right_Con" style="display: none">
+                <div class="detail_header3">
+                    <h2>收货地址</h2>
+                    <form action="" method="">
+                        <table>
+                            <tr>
+                                <td class="td1">姓名：</td>
+                                <td colspan="2" class="td3">
+                                    <input type="text" placeholder="用户名">
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">所在地区：</td>
+                                <td colspan="2" class="td4">
+                                    <select>
+                                        <option>苏州</option>
+                                        <option>苏州</option>
+                                        <option>苏州</option>
+                                        <option>苏州</option>
+                                    </select>
+                                    <select>
+                                        <option>苏州</option>
+                                        <option>苏州</option>
+                                        <option>苏州</option>
+                                        <option>苏州</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="td1"><span>详细地址：</span></td>
+                                <td colspan="2"><input id="text_input" type="text" placeholder=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">手机号码：</td>
+                                <td colspan="2" class="td3">
+                                    <input type="text" placeholder="">
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">邮政编码：</td>
+                                <td colspan="2" class="td3">
+                                    <input type="text" placeholder="">
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="td5">
+                                    <span class="radio_input">
+                                        <input type="radio" name="sex">
+                                    </span>设为默认地址
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="sub_btn3">
+                    <button>取消</button>
+                    <button>保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+<script src="/javascripts/jquery-3.1.0.js"></script>
+<script src="/javascripts/setting.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/javascripts/personal_setting.js"></script>

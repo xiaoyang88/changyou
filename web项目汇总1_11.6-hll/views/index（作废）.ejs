@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>畅游</title>
+    <script src="/javascripts/jquery-3.1.0.js"></script>
+    <script src="/javascripts/script.js"></script>
+    <link rel="stylesheet" href="/stylesheets/indexA.css" type="text/css">
+
+
+</head>
+<body>
+<header>
+    <!--导航栏-->
+    <%- include ../util/nav.ejs%>
+</header>
+<section>
+    <!--上部分大图区域-->
+    <div id="section_top">
+        <!--搜索栏-->
+        <div id="search_container">
+            <div id="searchtab"></div>
+            <span>搜攻略</span>
+            <div id="search_bar">
+                <input type="text" placeholder="搜旅游攻略">
+                <div id="search_ico">
+                    <a href="#" ></a>
+                </div>
+            </div>
+        </div>
+        <!--右侧轮播图片-->
+        <div id="show_image">
+            <ul>
+                <li id="show_image_li1"><img src="/images/index/show_image1.jpeg" alt=""></li>
+                <li id="show_image_li2"><img src="/images/index/show_image2.jpeg" alt=""></li>
+                <li id="show_image_li3"><img src="/images/index/show_image3.jpeg" alt=""></li>
+                <li id="show_image_li4"><img src="/images/index/show_image4.jpeg" alt=""></li>
+                <li id="show_image_li5"><img src="/images/index/show_image5.jpeg" alt=""></li>
+            </ul>
+            <a href=""><div  id="show_image_link"></div></a>
+        </div>
+    </div >
+  <!--  中间  热门游记-->
+    <div id="note">
+        <!--热门游记标题-->
+        <div id="note_title">
+            <div id="note_title_span">
+                 <span>热门游记推荐</span>
+            </div>
+            <hr id="h1">
+            <img src="/images/index/flower1.png" alt="">
+            <hr id="h2">
+        </div>
+        <!--第一行图片区-->
+        <div id="note_top">
+                <div id="note_top1">
+                    <a href="">
+                    <div id="note_top1_img">
+                        <img src="/images/index/middle_images1.jpg" alt="">
+                        <p class="note_top_p">查看详情</p>
+                    </div>
+                    <!--<p>查看详情</p>-->
+                    <div id="note_top1_commen">
+                        <img id="collect1" src="/images/index/collect.png" alt=""><span>123</span>
+                        <img id="praise1" src="/images/index/zan.png" alt=""><span>55</span>
+                    </div>
+                    </a>
+                </div>
+
+            <div id="note_top2">
+                <a href="">
+                    <div id="note_top2_img">
+                        <img src="/images/index/middle_images5.jpeg" alt="">
+                        <p class="note_top_p">查看详情</p>
+                    </div>
+                    <div id="note_top2_commen">
+                        <img id="collect2" src="/images/index/collect.png" alt=""><span >333</span>
+                        <img id="praise2" src="/images/index/zan.png" alt=""><span >22366</span>
+                    </div>
+                </a>
+            </div>
+            <div id="note_top3">
+                <a href="">
+                    <div id="note_top3_img">
+                        <img src="/images/index/middle_images3.jpg" alt="">
+                        <p class="note_top_p">查看详情</p>
+                    </div>
+                    <div id="note_top3_commen">
+                        <img id="collect3" src="/images/index/collect.png" alt=""><span >109</span>
+                        <img id="praise3" src="/images/index/zan.png" alt=""><span >73</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--第二行图片区-->
+        <div id="note_bottom">
+            <div id="note_bottom_left">
+                <a href="">
+                    <div id="note_bottom_left_img">
+                        <img src="/images/index/middle_images4.jpg" alt="">
+                        <p class="note_bottom_left_p">查看详情</p>
+                    </div>
+                    <div id="note_bottom_left_comment">
+                        <img id="collect4" src="/images/index/collect.png" alt=""><span >88</span>
+                        <img id="praise4" src="/images/index/zan.png" alt=""><span >5634</span>
+                    </div>
+                </a>
+            </div>
+            <a href="/contentData/noteIndex">
+                <div id="note_bottom_right">
+                    <div>
+                        <span>查看更多 &nbsp;>> </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<%- include ../util/footer.ejs%>
+
+
+</body>
+</html>

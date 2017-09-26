@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/Myhome_note.css"/>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+<body>
+<header>
+    <%- include ../util/header-All_Other.ejs %>
+
+</header>
+<section style="margin: auto;width: 960px">
+    <div>
+        <img class="banner" src="/upload/<%= travelnoteData[0].Notepic[0] %>" alt="">
+    </div>
+    <div class="UserPic_divH">
+        <div class="Pic_divHL">
+            <img src="/upload/<%= travelnoteData[0].UserPic %>" alt="">
+        </div>
+        <div class="UserName_divH"><span><%= travelnoteData[0].UserName %></span></div>
+        <script>
+
+            var sStorage=window.sessionStorage;
+            sStorage.setItem('name', '<%= travelnoteData[0].UserName %>')
+
+        </script>
+        <div class="navbarH">
+            <ul>
+                <a href="/users/Otherhome_note_here?username=<%= travelnoteData[0].UserName %>">
+                    <li class=" active ">Ta 的游记</li>
+                </a>
+                <a href="/users/Otherhome_question?username=<%= travelnoteData[0].UserName %>">
+                    <li class="navbarH_li">Ta 的问答</li>
+                </a>
+                <a href="/users/Otherhome_exchange?username=<%= travelnoteData[0].UserName %>">
+                    <li class="navbarH_li">Ta的兑换</li>
+                </a>
+                <a href="/users/OtherPersonal_setting?username=<%= travelnoteData[0].UserName %>">
+                    <li class="navbarH_li">Ta 的资料</li>
+                </a>
+            </ul>
+        </div>
+        <div class="travelNote_conH">
+            <div class="travelContentH">
+                <p>Ta的游记</p>
+            </div>
+            <% if(travelnoteData.length>0){%>
+            <% for(var i=0;i<travelnoteData.length;i++) { %>
+            <div class="youji_divH">
+                <div class="youji_divH_left">
+                    <img src="/upload/<%= travelnoteData[i].Notepic[0] %>" alt="">
+                </div>
+                <div class="youji_divH_right">
+                    <a href="/contentData/noteInfoShow?noteId=<%= travelnoteData[i].TravelNoteId %>"><p><%= travelnoteData[i].Tname %></p></a>
+                    <p><%= travelnoteData[0].TrvaelContnet %></p>
+                    <p>发表于 <span class="youji_time"><%= travelnoteData[0].TravelNoteTime %></span></p>
+                    <!--<span class="youji_delete"><a href="">删除</a></span>-->
+                </div>
+            </div>
+            <%}%>
+            <%}%>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

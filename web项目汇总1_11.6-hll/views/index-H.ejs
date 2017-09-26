@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<head>
+    <title>畅游</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>-->
+    <link href="/stylesheets/index-H/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" href="/stylesheets/index-H/responsiveslides.css">
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/index-H/jquery.min.js"></script>
+    <script src="/javascripts/index-H/responsiveslides.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 1
+            $("#slider1").responsiveSlides({
+                maxwidth: 2500,
+                speed: 600
+            });
+        });
+        window.onload=SelectUserPic()
+    </script>
+</head>
+<body>
+<!---start-header---->
+<%- include ../util/header-H.ejs %>
+<!---End-header---->
+<!--start-image-slider---->
+<div class="image-slider">
+    <!-- Slideshow 1 -->
+    <ul class="rslides" id="slider1">
+        <li><img src="/images/index-H/slider1.jpg" alt=""></li>
+        <li><img src="/images/index-H/slider2.jpg" alt=""></li>
+        <li><img src="/images/index-H/slider3.jpg" alt=""></li>
+        <li><img src="/images/index-H/slider4.jpg" alt=""></li>
+    </ul>
+    <!-- Slideshow 2 -->
+</div>
+<!--End-image-slider---->
+<!---End-wrap---->
+<div class="clear"></div>
+<!---start-content---->
+<div class="content">
+    <div class="content_top">
+        <div class="wrap">
+            <h1><a href="#">热门游记推荐</a></h1>
+            <p>最新最热的游记 【 Top 3 】</p>
+            <span><a class="learnmore" href="/contentData/noteIndex">更多</a></span>
+        </div>
+    </div>
+    <div class="content-grids">
+        <div class="wrap">
+            <% if(mainNoteShowDetial.length>0){%>
+            <% for(var i=0;i<3;i++) { %>
+            <div class="grid">
+                <a href="#"><img src="/upload/<%= mainNoteShowDetial[i].Notepic[0]%>" title="image-name"/></a>
+                <a href="/contentData/noteInfoShow?noteId=<%=mainNoteShowDetial[i].TravelNoteId%>"><h3><%= mainNoteShowDetial[i].Tname%></h3></a>
+                <div style="height: 40px;word-break: break-all;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;
+	overflow: hidden;"><%- mainNoteShowDetial[i].TrvaelContnet%></div>
+                <a class="button" href="/contentData/noteInfoShow?noteId=<%=mainNoteShowDetial[i].TravelNoteId%>">详情</a>
+            </div>
+            <% }%>
+            <% }%>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="specials">
+        <div class="wrap">
+            <div class="specials-heading">
+                <h3>精彩游记展示</h3>
+            </div>
+            <div class="specials-grids">
+                <% if(mainNoteShowDetial.length>0){%>
+                <% for(var i=3;i<9;i++) { %>
+                <div class="special-grid">
+                    <img src="/upload/<%= mainNoteShowDetial[i].Notepic[0]%>" title="image-name"/>
+                    <a href="/contentData/noteInfoShow?noteId=<%=mainNoteShowDetial[i].TravelNoteId%>"><%= mainNoteShowDetial[i].Tname%></a>
+                    <div style="margin-bottom:20px;height: 40px;word-break: break-all;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;
+	overflow: hidden;"><%- mainNoteShowDetial[i].TrvaelContnet%>，</div>
+                </div>
+                <% }%>
+                <% }%>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---End-content---->
+<%- include ../util/footer.ejs%>
+<!---End-footer---->
+</body>
+</html>
+

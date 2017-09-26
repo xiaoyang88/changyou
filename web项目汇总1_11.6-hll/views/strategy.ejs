@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>畅游</title>
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/stylesheets/strategy.css">
+    <script src="/javascripts/v1script.js"></script>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+<body style="background-color: white">
+<header>
+    <!--导航栏-->
+    <%- include ../util/header-Stragety.ejs %>
+</header>
+<div >
+    <div class="lunbo">
+        <div class="fugai">
+            <div class="fugai1"></div>
+            <div class="fugai2"></div>
+            <div class="fugai3"></div>
+            <div class="cb"></div>
+        </div>
+        <div class="dianzui">
+            <div class="dian"></div>
+        </div>
+        <div class="box">
+            <img src="/images/strategy/strategy_lun_1.jpg">
+            <img src="/images/strategy/strategy_lun_2.jpg">
+            <img src="/images/strategy/strategy_lun_3.jpg">
+            <img src="/images/strategy/strategy_lun_4.jpg">
+            <img src="/images/strategy/strategy_lun_5.jpg">
+            <img src="/images/strategy/strategy_lun_1.jpg">
+
+        </div>
+        <div class="btn">
+            <div class="btn-l fl"><</div>
+            <div class="btn-con-l fl"></div>
+            <div class="btn-r fr">></div>
+            <div class="btn-con-r fr">r</div>
+        </div>
+        <ul class="list-li">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <div id="section">
+        <div id="main">
+           <!-- -&#45;&#45;左侧攻略导航-&#45;&#45;
+            <div id="parameter">
+            <div ><span style="color: #ccc;margin-top: 30px">攻略导航</span></div>
+            <div class="ha"><hr></div>
+            <div class="nav3">
+            <table>
+            <tr>
+            <td><a href="#">国内</a>&nbsp; | &nbsp;
+            <a href="#">主题</a></td>
+            </tr>
+            </table>
+            </div>
+            <div class="ha"><hr></div>
+            <div class="rank">
+            <ul>
+            <li >
+            <a href="" title="成都" target="_blank">
+            <img src="/images/image/w130.jpeg" alt="成都">
+            </a>
+            <p class="time">更新日期:2016-02-01</p>
+            <div class="down_cout">
+            <span></span>
+            <p class="">4166557人下载</p>
+            </div>
+            </li>
+            <div class="ha1"><hr></div>
+            <li>
+            <span class="num">2</span>
+            <a href="" title="西安" target="_blank">西安</a>
+            </li>
+            <div class="ha1"><hr></div>
+            <li>
+            <span class="num">3</span>
+            <a href="" title="大理" target="_blank">大理</a>
+            </li>
+            <div class="ha1"><hr></div>
+            <li>
+            <span class="num">4</span>
+            <a href="" title="厦门" target="_blank">厦门</a>
+            </li>
+            <div class="ha1"><hr></div>
+            <li>
+            <span class="num">5</span>
+            <a href="" title="北京" target="_blank">北京</a>
+            </li>
+            <div class="ha1"><hr></div>
+            <li>
+            <span class="num">6</span>
+            <a href="" title="青岛" target="_blank">青岛</a>
+            </li>
+            <div class="ha1"><hr></div>
+            <li>
+            <span class="num">7</span>
+            <a href="" title="九寨沟" target="_blank">九寨沟</a>
+            </li>
+            <div class="ha1"><hr></div>
+            <li>
+            <span class="num">8</span>
+            <a href="" title="丽江" target="_blank">丽江</a>
+            </li>
+            <div class="ha1"><hr></div>
+            <li>
+            <span class="num">9</span>
+            <a href="" title="香港" target="_blank">香港</a>
+            </li>
+            <div class="ha1"><hr></div>
+            </ul>
+            </div>
+            </div>-->
+            <!-----右侧攻略----->
+            <div class="hd">
+                <h3>推荐攻略</h3>
+            </div>
+            <% if(strategyShowData.length > 0){ %>
+            <% for(var i = 0;i < strategyShowData.length;i++) { %>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="tests-x"><a
+                        href="/users/strategyDetail?strategyNoteId=<%= strategyShowData[i].StrategyNoteId %>">
+                    <div class="bar clearfix">
+                        <span class="stat">  </span>
+                        <span class="type"> 来自<strong>&nbsp;&nbsp;畅游攻略</strong></span>
+                    </div>
+                    <div class="title">
+                        <%- strategyShowData[i].StrategyName %>
+                    </div>
+                    <div class="txt">
+                        <div class="infor"><%- strategyShowData[i].StrategyProfile %></div>
+                    </div>
+                    <div class="imgs">
+                        <ul class="clearfix">
+                            <% if(strategyShowData[i].StraPicDao.length > 0){ %>
+                            <% for(var j = 0;j < 3;j++) { %>
+                            <li><img src="/upload/<%= strategyShowData[i].StraPicDao[j] %>"
+                                     style="width: 200px;height: 150px"></li>
+                            <!--<li><img src="/images/image/xU32.jpeg"></li>
+                            <li><img src="/images/image/EY98.jpeg"></li>-->
+                            <% } %>
+                            <% } %>
+                        </ul>
+                    </div>
+                </a>
+                <div class="strategy_time"><span>发表于</span><span> <%- strategyShowData[i].StrategyNoteTime %></span>
+                </div>
+            </div>
+            <% } %>
+            <% } %>
+        </div>
+    </div>
+</div>
+<footer style="clear: both;padding-top: 50px">
+    <%- include ../util/footer.ejs %>
+
+</footer>
+</body>
+</html>

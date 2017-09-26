@@ -1,0 +1,91 @@
+body{
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    font-size: 16px;
+    margin: auto;
+    padding: 0px;
+}
+a{
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: #333333;
+    text-decoration: none;
+}
+.qt:hover{
+    text-decoration: none;
+    color: #FF9D00;
+}
+ul li {
+    list-style-type: none;
+}
+#container{
+    width: 1000px;
+    height: 5000px;
+    margin-left: 175px;
+    margin-top: 15px;
+
+}
+#main{
+    float: left;
+    width: 680px;
+    margin-top: 15px;
+    font-family: 微软雅黑;
+}
+.mfw-pic{
+    width: 680px; ;
+}
+.crumb{
+    font-family: 微软雅黑;
+    color: #989898;
+}
+.crumbs{
+    color:#FF9D00 ;
+}
+.crumbs:hover{
+    color:#FF9D00 ;
+}
+.art-title{
+    font-family: 微软雅黑;
+}
+.h3{
+    font-weight: 400;
+}
+.bar{
+    float: right;
+    margin-right: 180px;
+    margin-top: -4980px;
+}
+table{
+    width:240px ;
+    height:80px ;
+    border:1px;
+    box-shadow:1px 1px 1px 1px #dadada;
+    border-radius: 1px;
+}
+.bs_collect{
+    color:#FF9D00 ;
+    margin-left: 25px;
+}
+.bs_collect:hover{
+    color:#FF9D00 ;
+
+}
+.bs_share{
+    color:#FF9D00 ;
+    margin-left: 40px;
+}
+.bs_share:hover{
+    color:#FF9D00 ;
+
+}
+.description{
+    color: #b4b4b4;
+}
+p{
+    color: #767676;
+}
+.t1{
+    color:#FF9D00  ;
+}
+.t2{
+    color:#FF9D00  ;
+}

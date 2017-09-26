@@ -1,0 +1,147 @@
+body{
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    font-size: 16px;
+    margin: auto;
+    padding: 0px;
+}
+a{
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: #333333;
+    text-decoration: none;
+}
+.qt:hover{
+    text-decoration: none;
+    color: #FF9D00;
+}
+ul li {
+    list-style-type: none;
+}
+#section{
+    margin-left: 72px;
+    margin-top: 15px;
+    width: 1000px ;
+    height: 1000px;
+    font-family: 微软雅黑;
+}
+.sub_th{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    width: 1000px;
+    height: 53px;
+    border: 1px solid #C9C9C9;
+}
+.crumbs{
+    margin-top: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    color:#C9C9C9  ;
+}
+.sub_ths{
+    color: #919191;
+}
+.sub_ths:hover{
+    color: #808080;
+    text-decoration: none;
+}
+.collect{
+    float: right;
+    margin-right: 20px;
+    margin-top: -20px;
+    text-decoration: none;
+
+}
+.collects{
+    color: #919191;
+}
+.collects:hover{
+    color: #919191;
+    text-decoration: none;
+}
+.share{
+    float: right;
+    margin-top: -20px;
+    margin-right: 20px;
+    text-decoration: none;
+
+}
+.shares{
+    color: #919191;
+}
+.shares:hover{
+    color: #919191;
+    text-decoration: none;
+}
+.current{
+    font-family: 微软雅黑;
+    color:#FF9D00  ;
+}
+.current:hover{
+    color: #FF9D00 ;
+    text-decoration: none;
+}
+.favorite_num{
+    color:#FF9D00 ;
+    text-decoration: none;
+}
+.bd {
+    margin-top: 30px;
+    width: 682px;
+    float: left;
+    font-family: 微软雅黑;
+
+}
+.section_content_right{
+    width: 295px;
+    height: 600px;
+    border: 0px solid #999;
+    border-radius: 5px;
+    position:absolute;
+    float: right;
+    margin-top: 40px;
+    top:580px;
+    left: 893px;
+}
+.th{
+    margin-top: 15px;
+
+}
+.title{
+    font-size: 20px ;
+    font-family: 微软雅黑;
+    text-indent: 1em;
+}
+.title1{
+    font-size: 25px ;
+    font-family: 微软雅黑;
+    text-indent: 1em;
+}
+.h1{
+    font-size: 16px;
+}
+.like{
+    float:left;
+    margin-left: 320px;
+    margin-top: -25px;
+}
+.mark{
+    margin-top: 25px;
+}
+p{
+    font-family: 微软雅黑;
+    color: #494949;
+}
+.an{
+    margin-top: 10px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+}
+.top{
+    margin-left: 15px;
+    text-indent: 5em;
+    color:#494949;
+}
+.top:hover{
+    color:#FF9D00;
+    text-decoration: none;
+}

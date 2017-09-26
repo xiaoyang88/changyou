@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>畅游</title>
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/stylesheets/strategy_num1.css">
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/jquery-3.1.0.js"></script>
+    <script src="/javascripts/strategy_num1.js"></script>
+    <script src="/javascripts/v1script.js"></script>
+
+</head>
+<body onload="bg_show1()">
+<header>
+    <!--导航栏-->
+    <%- include ../util/nav.ejs%>
+</header>
+<div class="container clearfix">
+    <section id="section">
+       <div class="tops">
+           <img src="/images/image/o37.jpeg"  height="300px" alt="">
+       </div>
+        <div class="sub_th">
+                <div class="crumbs ">
+                    <a class="sub_ths" href="">首页</a>
+                    &gt;
+                    <a class="sub_ths" href="">英国</a>
+                    &gt;
+                    <a href="" class="current">手把手教你拿下英国签证</a>
+                </div>
+                    <div class="share">
+                        <a href="" title="分享" class="shares">分享</a>
+                    </div>
+                    <div class="collect">
+                        <a href="" title="收藏" class="collects" data-id="341">收藏
+                            <span class="favorite_num">237</span>
+                        </a>
+                    </div>
+        </div>
+        <div class="con wrap">
+            <div class="th">
+                <div class="title1"><strong>手把手教你拿下英国签证</strong></div>
+                    <span class="like"> 281人体验过</span>
+
+                <p class="an">英国—曾经的日不落帝国，二次世界大战之前可谓是世界老大哥。
+                    你可能早就听说过赫赫有名的大本钟、泰晤士河、牛津大学、剑桥大学。甚至在少年时就学过徐志摩的“轻轻的我走了，正如我轻轻的来；我轻轻的招手，作别西天的云彩.....”。
+                    运动少年可能想看一次真正的英超，文艺少女也会想喝一次纯正的英式下午茶，魔法迷会想看一次哈利波特的魔法世界。这里的一切都在吸引着你，有了行程，有了规划，只差签证就可以出发。
+                    现在就让我来教你一步步拿下签证，开启英国之旅~</p>
+            </div>
+            <div class="bd">
+                    <div   id="topic_0" name="topic_0">
+                        <div class="theme">
+                            <div class="title"><strong>说在前面：</strong></div>
+                            <p><p>曾经的英国属于欧盟，很多人以为使用欧洲申根签可以入境，然而并不可以。经过前阵子轰轰烈烈的脱欧投票，现在英国更是彻底和欧盟没有了任何牵连，所以快来看看如何申请签证吧。</p></p>
+                        </div>
+                    </div>
+                    <div  id="topic_1" name="topic_1">
+                        <div class="theme">
+                            <div class="title"><strong>申请签证你都需要什么？</strong></div>
+                            <div class="focus"><img src="/images/image/qs14.jpeg" alt="" width="100%"></div>
+                            <p><p><strong>必不可少的资料：</strong></p>
+                            <p><strong>01.&nbsp;申请表</strong><br />
+                            申请表是在在线填写的。填写完成后会出现缴费页面，付款成功可预约递签。生成的申请表和材料清单会发送到你的邮箱，打印出来带去使馆就可以了。
+                                <br />Tips：不同申请人可以用同一个邮箱，这样通知邮件也会发到一起，比较方便。</p>
+                            <p><strong>02. 资产证明</strong><br />申请发达国家的签证，肯定要证明自己有钱，不是想非法移民，存款至少保证五万以上。
+                                需要注意的是最好不要有一次性大量资金汇入，这样会让签证官有种你是临时凑钱做账的感觉。去银行开了存款证明的时候需要中英双语，工资卡流水的账单在进行翻译的时候一定要强调salary和balance。</p>
+                            <p><strong>03. 在职证明</strong><br />证明信上需要有公司的抬头。一般公司人力资源部门都可以开。最好是公司可以直接提供中英双语带公章。</p>
+                            <p><strong>04. 行程单</strong><br />对于旅行签证来讲，这是非常重要的一部分。有明确的目的地能让证官觉得你是个有规划的人，同时也能大概知道你一路上的消费水准。行程单内容需要覆盖在境外停留期间的全部行程，注明停留的日期、城市、所有交通方式及景点，直接提供英文的就可以了。</p>
+                            <p><strong>05. 户口本、身份证</strong><br />原件整本提供，复印件、翻译件。做翻译的时候最好进行等比例格式翻译。比如户口本上的各种框里的内容同样用框的形式打印，这样便于签证官审理，而且会给他们一种你很认真的感觉。</p>
+                            <p><strong>06. 护照</strong><br />有出国经历的小伙伴，需要复印所有的签证页，有换过护照的小伙伴，也要记得把旧护照交上去。</p>
+                            <p><strong>07. 照片</strong><br />1张两寸白底近照，露出眉毛和耳朵。详细信息可查看<a href="" target="_blank">https://www.gov.uk/photos-for-passports</a>。</p>
+                            <p><strong>08.&nbsp;机票和住宿</strong><br />官网上有明确说明，在签证下来之前不要确认机票和住宿。所以提供的都是预定信息。
+                                <br />在蚂蜂窝查找好规划路线附近的酒店，可以直接跳转到预定界面，例如booking，booking通常情况下提供提前24小时免费取消的服务，只要在付款前看清楚就可以了。</p>
+                            <p><strong>09. 房产证</strong><br />类似房产证等固定资产的证明其实不是必须的。但是这能更好的表明你在当地有资产，有钱来支撑你在英国的消费，而且不会随随便便就抛弃这些。能提供的话最好提供。</p>
+                            <p>英国使馆对于申请材料其实没有硬性要求，所以下图中的列表大家可以作为参考：</p>
+                            <p><img src="/images/image/E336.png" alt="" /></p></p>
+                        </div>
+                    </div>
+                    <div   id="topic_2" name="topic_2">
+                        <div class="theme">
+                            <div class="title"><strong>签证的申请流程是怎样的？</strong></div>
+                            <div class="focus"><img src="/images/image/U32.jpeg" alt="" width="100%"></div>
+                            <p><p><strong>1.1 在线填写签证申请表<br /></strong>访问<a href="" target="_blank">www.gov.uk/apply-uk-visa</a>在线提交签证申请表。<strong><br /></strong></p>
+                            <p><strong>1.2 在线支付签证费<br /></strong>你需要使用人民币通过VISA或万事达（Mastercard）信用卡或者借记卡在线支付签证申请费。完成在线支付后，会收到来自官方的付款提供商WorldPay的确认电子邮件。
+                                <br />如果想要撤签退款，可以填写退款申请表。但是如果已经提交生物信息并且/或者你的申请已经受审，签证申请费用是不可以退还的。</p>
+                            <p><strong>1.3 预约签证申请中心<br /></strong>付款成功后需要在线预约时间，你所预约的日期必须在你完成并提交在线申请表之后的90天内。必须本人递交资料原件并且按指纹。在签证中心不会看见签证官，只是递交资料按指纹，拍照。
+                                <br />你需要保证自己可以前往下列签证申请中心的其中一个赴约：
+                                <br />北京、长沙、成都、重庆、福州、广州、杭州、济南、昆明、南京、上海、沈阳、深圳、武汉、西安。</p>
+                            <p><strong>2.1 生物识别信息</strong><br />除非受到特别豁免，每次申请签证您都必须亲自前往签证申请中心，提交生物识别信息（指纹扫描和面部照片）。</p>
+                            <p><strong>2.2 领取材料</strong><br />签证申请受理结束后，您可以选择直接前往签证申请中心领取材料和护照，或支付额外费用通过快递方式领取。</p>
+                            <p><strong>3.0 签证审理时间<br /></strong>通常情况下，旅游签这种非定居类签证一到两周就可以出签。英速签三到五天可以出签，急速签只要一天就可以。</p>
+                            <p>Tips：个人觉得旅游类签证最好不要做加急，按部就班的申请会显得比较有规划。</p>
+                            <p><strong>4.0 拒签<br /></strong>英国的拒签信上面会有明确的拒签原因，拒签一般分2种:
+                                <br />01. 320A(提供了假资料，但是有可能不是故意的，可以原谅，再次申请签证可以提供相关的英文说说明信）。
+                                <br />02. 320B(故意造假，为了出国而造假，使馆看都不看，直接拒签）这样的是无法挽救的。
+                                <br />注意：提供假资料，说谎以及隐瞒信息会导致拒签，并且10年禁止入境英国。英国的签证审核会很详细。
+                                <br />03.&nbsp;在职写的收入与工资卡进账不相符。<br />04.&nbsp;上次实际停留时间与当初递交申请时不相符。
+                                <br />05.&nbsp;之前在英国有过不良记录。
+                                <br />英国签证拒签的话可以申诉，在拒签信上面会有提示，一般受理28个工作日。
+                                <br />提醒您，签证申诉成功的很少，建议您重新申请签证。</p></p>
+                        </div>
+                    </div>
+                    <div   id="topic_3" name="topic_3">
+                        <div class="theme">
+                            <div class="title"><strong>如何填写签证申请表？</strong></div>
+                            <p><p>前往官网：<a href="" target="_blank">https://visas-immigration.service.gov.uk/product/uk-visit-visa</a></p>
+                            <p>初次登陆会注册一个个人账号：</p>
+                            <p><img src="/images/image/Q90.jpeg" alt="" /></p>
+                            <p>如果是多人出行可以使用同一个邮箱，这样最终确认都会发到一起比较方便查看。</p>
+                            <p>之后就会正式进入填写过程。内容有点多，如果来不及完成也没关系，因为已经注册了账号，所以临时内容也会保存。到正式提交之前，所有的填写内容都还可以修改；
+                                如果已经提交了信息，又发现有错误的地方，也没关系，工整的修改之后签上名字就行了。不过尽量不要出现这种低级错误，会给面试官造成不好的印象觉得你不认真。</p>
+                            <p>表格的内容大致就是&ldquo;个人信息：姓名、家庭住址、电话、性别、婚姻状况、国籍、出生日期和国家、护照信息
+                                <br />；工作和收入状况包括（有工作的情况）职位、公司信息、收入、积蓄、访问费用、消费情况（此项比较重要，要和准备好的银行账单等材料对应起来）；
+                                英国行程问题：抵达及离开日期、访问理由、同行者信息、住宿信息；家人信息：是否赡养他人、父母信息、是否有生活在英国的家人；
+                                旅行史：是否去过英国、是否获得过英国签证、是否去过其他国家旅行、是否被其他国家拒签或拒绝入境等；个人行为问题：是否有违法行为、战争或恐怖主义行为、就业记录；
+                                额外信息：可以写一些你认为对自己申请签证有利的信息&rdquo;。</p>
+                            <p>打算申请签证的小伙伴可以按照上列信息大致想一下自己的安排，然后认真填写就好啦。</p></p>
+                        </div>
+                    </div>
+                    <div  id="topic_4" name="topic_4">
+                        <div class="theme">
+                            <div class="title"><strong>签证费要多少钱？</strong></div>
+                            <p><p>以前游客都会申请六个月多次往返签证，85英镑；一至两年签324英镑；五年签588英镑。但是显然，现在的大英帝国对中国公民更加友好，新系统里<strong>85英镑可以申请两年多次往返</strong>的旅行签证，已经没有了6个月的选项。如果进入的是老系统，即使选择6个月多次往返也会自动升级到两年多次往返，不用担心。</p></p>
+                            <p><p>非加急状态的普通申请，大部分人可以在两周内拿到的两年往返签最终费用为<strong>850人民币</strong>。如果需要办理加急服务打算在三到五天内拿到签证，费用是<strong>2050人民币</strong>。更着急的小伙伴需要办理24小时出签服务的，费用是<strong>6850人民币</strong>。（敲黑板划重点，提前安排好行程是多么的重要，省钱啊。）</p></p>
+                            <p><p>相对来讲，英国签证的出签率比较低，申请的材料也比较复杂，如果觉得自己没把握的小伙伴可以找代办，算上时间成本，反而代办更划算一些。例如同样是六个月多次往返的签证官网价格850，代办只需九百左右。时间成本也是成本哦。</p></p>
+                        </div>
+                    </div>
+                    <div   id="topic_5" name="topic_5">
+                        <div class="theme">
+                            <div class="title"><strong>如果没时间去使馆怎么办？</strong></div>
+                            <div class="focus"><img src="/images/image/Y98.jpeg" alt="" width="100%"></div>
+                            <p><p>英国使馆有一项很贴心的服务叫做：<strong>如意签</strong>。 </p>
+                            <p>英国在中国共有15个签证申请中心，比任何国家都多，但是依然有很多人无法前往使馆办理。所以英国使馆在北京、沈阳、济南、武汉、重庆、成都、上海、杭州、南京、广州、深圳、福州、西安、昆明和长沙共15个城市开通了如意签服务。</p>
+                            <p>使用如意签服务，会有专人上门来采集指纹和收集材料，免去你自己跑使馆的麻烦。</p>
+                            <p><strong>怎样使用如意签</strong>：</p>
+                            <p>第一步：发邮件到ukvisasondemand@vfshelpline.com预约。请至少提前3天预约。</p>
+                            <p>第二步：在得到确认后的24小时内付费。使馆会在你付费成功后确认你的预约日期。</p>
+                            <p>第三步：服务人会将在预约的日期和时间到达你所在的城市，接收你的申请和采集指纹。</p>
+                            <p><strong>此服务的价格是多少？</strong></p>
+                            <p>如意签服务的价格根据申请人的人数和地点有所不同。具体价格请查看网站：
+                            <a href="" target="_blank">www.vfsglobal.co.uk/china</a></p>
+                            <p><strong>如意签能接收大型团队申请吗？</strong></p>
+                            <p>可以。接收一个人的申请或者团队申请会有不同的价格。</p>
+                            <p><strong>使用如意签会让我的签证得到更快的处理吗？</strong></p>
+                            <p>会和审理其他签证一样的速度审理如意签。符合英速签申请条件的申请人同样可以使用英速签服务。</p>
+                            <p><strong>使用如意签会提高我签证通过的几率吗？</strong></p>
+                            <p>会以审理其他签证一样的审核标准审理如意签。在2014年，96%申请非定居签证的中国客户获得了签证。比上一年增长了11%。</p>
+                            <p><strong>如意签申请的流程安全吗？</strong></p>
+                            <p>是的，工作人员会有严格的流程确保你的指纹数据的安全。</p>
+                            <p><strong>我可以在其他城市使用这个服务吗？</strong></p>
+                            <p>如意签服务暂时仅适用于昆明、长沙、西安、北京、沈阳、济南、武汉、重庆、成都、上海、杭州、南京、广州、深圳和福州共15个城市。</p>
+                            <p><strong>我需要预约吗？</strong></p>
+                            <p>是的，必须在预约之后才会提供此服务。这是为了确保英国指纹和签证流程的诚信和安全。</p>
+                            <p>更多信息请访问网站<a href="" target="_blank">www.vfsglobal.co.uk/china </a>或发送邮件到UKvisasondemand@vfshelpline.com 。</p></p>
+                        </div>
+                    </div>
+                    <div   id="topic_6" name="topic_6">
+                        <div class="theme">
+                            <div class="title"><strong>不同类型的签证都需要注意什么？</strong></div>
+                            <div class="focus"><img src="/images/image/k42.jpeg" alt="" width="100%"></div>
+                            <p><p><strong>旅行签证：</strong></p>
+                            <p>01. 在英国当地没有直系亲属。<br />02. 全程交通预定单以及行程单一定要提供，旅行规划越详细越好。</p>
+                            <p><strong>探亲访友签证：</strong></p>
+                            <p>01. 邀请方的有效居留证明 (复印件):护照首页末页签字页、有效签证页/居留证/工作许可/学习许可复印件、在校证明/学生证、在职证明等。
+                                <br />02. 对方的住宿证明，如：租房合同复印件.如邀请人有房产，需提供房税证明以及邀请人居所内人员清单。
+                                <br />03. 邀请函（英文的原件)：邀请方出具的邀请信并签名，需包含如下信息：
+                                ①邀请人的地址、详细联系方式（电话、邮箱等）；
+                                ②申请人的姓名、护照号；
+                                ③双方的关系说明；
+                                ④访问的目的和停留时间、地点；
+                                ⑤在境外住宿地址及谁来承担在境外旅行居住的费用。
+                                <br />04. 亲属关系需要提供出生证、结婚证、派出所证明、亲属关系公证等。访友目的请提供合影照、书信、通话记录等证明材料，无需公证。
+                                <br />05. 警察局警署证明:在英国当地无犯罪记录证明。</p>
+                            <p>Tips：<br />a.邀请方承担费用的证明 (复印件):如果由邀请方承担境外停留期间的费用，需提供邀请人收入及财政状况证明。
+                                <br />b.如果有直系亲属在英国上学/工作/持有永居证明，建议按照探亲来申请签证。
+                                <br />c.如果出境记录较少，有朋友或者亲戚在英国，建议按照访友办理签证。只要您的家人或者朋友在英国的身份是合理的，都可以以个人的名义发送邀请函邀请国内的人员去英国。</p></p>
+                        </div>
+                    </div>
+                    <div  id="topic_7" name="topic_7">
+                        <div class="theme">
+                            <div class="title"><strong>拥有英国签证还可以去哪？</strong></div>
+                            <p><p>英国签证相对来说申请审核比较严格。所以好不容易拿到签证，除了英国，你知道还有哪些地方可以去吗？</p>
+                            <p>01. <strong>翡翠岛国&mdash;爱尔兰</strong>：拥有英国&ldquo;C&rdquo;类短期签证且已入境英国的游客可以免签（至2016年10月）前往。
+                                <br />Tips：持英国永居或其它超过6个月的长期签证者反而不免签。<br />
+                                <br />02. <strong>海外属地&mdash;直布罗陀</strong>：靠近西班牙，是很受英国人喜爱的海滨度假胜地。拥有12个月以上的英国签证，或者至少6个月的多次签证，或者7天以上的申根签证就能直接去。
+                                <br />Tips：当地没有中国使馆，请拿好证件。<br />
+                                <br />03. <strong>皇家属地&mdash;泽西岛</strong>：离法国更近。面积不大，持英国签证者可自由出入。<br />
+                                <br />04. <strong>山水小国&mdash;黑山共和国</strong>：地中海边的多山小国，拥有英美加签证者单次入境可免签7天。</p>
+                            <p>05. <strong>国中国&mdash;圣马力诺</strong>：被意大利环抱的小国，单次入境免签90天。但它没有自己的机场，因此你还需要申根签证进入意大利。<br />
+                                <br />06. <strong>塞尔维亚共和国</strong>：内陆小国，持欧盟（包括英国）和美国永居签证者单次入境免签90天。</p>
+                            <p>07. <strong>多米尼加共和国</strong>：持有效的英美加或申根签证的中国公民，只要在多米尼加共和国机场购买旅游卡就可以免签30天。</p></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="section_content_right">
+                <p class="title">攻略目录</p>
+                <div><hr></div>
+                            <div class="#" id="side_0"> <p>&nbsp;
+                                <a class="top" href="#topic_0">说在前面：</a></div>
+                    <div><hr></div>
+                            <div  id="side_1"><p>&nbsp;<a class="top"
+                                    href="#topic_1">0/1申请签证你都需要什么？</a></div>
+                    <div><hr></div>
+                            <div  id="side_2"><p>&nbsp;<a class="top"
+                                    href="#topic_2">0/2签证的申请流程是怎样的？</a></div>
+                    <div><hr></div>
+                            <div  id="side_3"><p>&nbsp;<a class="top"
+                                    href="#topic_3">0/3如何填写签证申请表？</a></div>
+                    <div><hr></div>
+                            <div  id="side_4"><p>&nbsp;<a class="top"
+                                    href="#topic_4">0/4签证费要多少钱？</a></div>
+                    <div><hr></div>
+                            <div  id="side_5"><p>&nbsp;<a class="top"
+                                    href="#topic_5">0/5如果没时间去使馆怎么办？</a></div>
+                    <div><hr></div>
+                            <div  id="side_6"><p>&nbsp;<a class="top"
+                                    href="#topic_6">0/6不同类型的签证都需要注意什么？</a></div>
+                    <div><hr></div>
+                <div  id="side_7">&nbsp;<a class="top"
+                                    href="#topic_7">0/7拥有英国签证还可以去哪？</a></div>
+                    <div><hr></div>
+                    </div>
+    </section>
+    </div>
+</body>
+</html>

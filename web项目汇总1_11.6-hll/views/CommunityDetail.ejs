@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>社区</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/communityDetail.css">
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload = SelectUserPic()
+    </script>
+</head>
+<body>
+
+
+<%- include ../util/header-Community.ejs %>
+<div >
+    <div class="ask_top_detail"></div>
+    <div class="section" style="margin: auto;margin-bottom: 50px">
+        <section>
+            <div id="section-img"></div>
+            <div id="question">
+                <ul id="myTab" class="nav nav-tabs " role="tablist">
+                    <li><a href="#rule" role="tab" data-toggle="pill"
+                           style="font-size: 20px;letter-spacing: 4px;margin-left: -16px">最新问题</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="rule">
+                        <div class="tab-pane fade in active" id="bulletin">
+                            <% if(QuestionInfo.length > 0){ %>
+                            <% for(var i = 0;i < QuestionInfo.length;i++) { %>
+                            <div class="Question">
+                                <div class="HeadPortrait" style="margin-top: 20px;margin-left: 25px">
+                                    <img src="/upload/<%- QuestionInfo[i].UserPic %>" alt="">
+                                    <p style="display: inline-block;font-size: 18px;margin-top:20px;font-weight: bold;color: #666666"><%- QuestionInfo[i].UserName %></p>
+                                    <span style="font-size: 10px;color: #666666;margin-left: 5px">提了一个问题</span>
+                                </div>
+                                <div class="QuestionName"><a href=""
+                                                             style="font-size: 18px;"><%- QuestionInfo[i].QuestionName %></a>
+                                </div>
+                            </div>
+                            <div class="Answer">
+                                <div class="content">
+                                    <div class="AnswerContent">
+                                        <%- QuestionInfo[i].QuestionContent %>
+                                    </div>
+                                    <div class="info">
+                                        <span class="time">发表于&nbsp;&nbsp;&nbsp;<%- QuestionInfo[i].QuestionTime %></span>
+                                    </div>
+                                </div>
+
+                                <!--<hr class="hr1">-->
+                            </div>
+                            <% } %>
+                            <% } %>
+                        </div>
+                        <div style="margin-top: 20px">
+                            <% if(QuestionDetailData.length > 0){ %>
+                            <% for(var i = 0;i < QuestionDetailData.length;i++) { %>
+                            <div class="Question_answer_all">
+                                <div class="HeadPortrait" style="margin-top: 20px;">
+                                    <img src="/upload/<%- QuestionDetailData[i].UserPic %>" alt="">
+                                    <div style="display:inline-block;margin: 0px 0px 0px -80px;position: relative;top: -9px;">
+                                        <p style="display: inline-block;font-size: 18px;font-weight: bold;color: #666666"><%- QuestionDetailData[i].UserName %></p>
+                                        <span style="font-size: 10px;color: #666666;margin-left: 5px">回答了问题</span>
+                                        &nbsp;&nbsp;&nbsp;<span
+                                                class="Question_answerTime"><%- QuestionDetailData[i].AnswerTime %></span>
+                                    </div>
+                                </div>
+                                <div class="Question_answerContentALL">
+                                    <span class="Question_answerContent"><%- QuestionDetailData[i].AnswerContent %></span>
+                                    <div class="Question_collect"><span class="dianzan">点赞</span><span
+                                                class="collect">收藏</span></div>
+
+                                </div>
+
+
+                            </div>
+                            <% } %>
+                            <% } %>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span class="PL">回复</span>
+                <div class="DX"></div>
+                <div class="hr">
+                    <hr>
+                </div>
+                <div>
+                    <form role="form" action="javascript:;" method="post" id="myForm">
+                        <input type="text" name="com" id="com" required="required"
+                               placeholder="认真详细的回答对提问者更有帮助，请不要灌水和过激言论哦"
+                               class="question_answer">
+                        <br>
+                        <input type="button" value="回答问题" id="btn" onclick="sub()" class="question_answer_btn">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="section_content_right">
+            <div class="Question_img"><img src="/images/community/login_bg.png"></div>
+            <a href="/users/CQuestion">
+                <button class="btn  btn-lg" id="btnWen">我要提问</button>
+            </a>
+        </div>
+    </div>
+</div>
+<footer style="clear: both">
+<%- include ../util/footer.ejs %>
+</footer>
+<script src="/javascripts/CommunityDetail.js"></script>
+<script src="/javascripts/jquery-3.1.0.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        //获取要定位元素距离浏览器顶部的距离
+        var navH = $(".section_content_right").offset().top;
+        //滚动条事件
+        $(window).scroll(function () {
+            //获取滚动条的滑动距离
+            var scroH = $(this).scrollTop();
+            //滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定
+            if (scroH >= navH) {
+                $(".section_content_right").css({"position": "fixed", "top": 0, "left": 880});
+            } else if (scroH < navH) {
+                $(".section_content_right").css({"position": "absolute", "top": 350, "left": 880});
+            }
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>积分商城</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/mallshow.css" type="text/css">
+    <script src="/javascripts/jquery-3.1.0.js"></script>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/mallscript.js"></script>
+    <!--  <link rel="stylesheet" href="/stylesheets/mallshow.css">-->
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+<link rel="stylesheet" href="/javascript/bootstrap.min.css">
+<!--<link rel="stylesheet" href="/stylesheets/shequ.css">-->
+<script src="/javascript/bootstrap.min.js"></script>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $("#myTab .nav-digital").click(function () {
+            $("#myTabContent .mod1").show();
+            $("#myTabContent .mod2").hide();
+            $("#myTabContent .mod3").hide();
+            $("#myTabContent .mod4").hide();
+        })
+        $("#myTab .nav-life").click(function () {
+            $("#myTabContent .mod2").show();
+            $("#myTabContent .mod1").hide();
+            $("#myTabContent .mod3").hide();
+            $("#myTabContent .mod4").hide();
+        })
+        $("#myTab .nav-beauty").click(function () {
+            $("#myTabContent .mod3").show();
+            $("#myTabContent .mod2").hide();
+            $("#myTabContent .mod1").hide();
+            $("#myTabContent .mod4").hide();
+        })
+        $("#myTab .nav-outdoor").click(function () {
+            $("#myTabContent .mod4").show();
+            $("#myTabContent .mod2").hide();
+            $("#myTabContent .mod3").hide();
+            $("#myTabContent .mod1").hide();
+        })
+    })
+</script>
+<body>
+<%- include ../util/header-jifen.ejs%>
+<section class="section" style="margin: auto;margin-top: 30px">
+
+    <div class="container">
+        <section>
+            <div class="hot_type">热门分类</div>
+            <div class="section-nav">
+                <div class="cate-nav">
+                    <ul id="myTab" class="list-unstyled">
+                        <li class="nav-digital active"><a  href="##"><i class="icon" ></i>数码产品</a></li>
+                        <li class="nav-life"><a href="##"><i class="icon"></i>家居生活</a></li>
+                        <li class="nav-beauty"><a href="##"><i class="icon" ></i>美丽专区</a></li>
+                        <li class="nav-outdoor"><a href="##"><i class="icon"></i>户外度假</a></li>
+                    </ul>
+                </div>
+                <div id="myTabContent" class="tab-content">
+                    <div class="mod1" style="display: block" >
+                        <div class="mod1-content">
+                            <div class="mod1-content1">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod-1-1.jpeg">
+                                </div>
+                                <p class="text-1">酷派双USB车载充电器</p>
+                                <p class="text-2">800积分</p>
+                            </div>
+                            <div class="mod1-content2">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod-1-2.jpeg">
+                                </div>
+                                <p class="text-1">金士顿16GB 金属U盘</p>
+                                <p class="text-2">700积分</p>
+                            </div>
+                            <div class="mod1-content3">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod-1-3.jpeg">
+                                </div>
+                                <p class="text-1">罗技（Logitech）M185 无线鼠标 黑色</p>
+                                <p class="text-2">1500积分</p>
+                            </div>
+                        </div>
+                        <div class="mod1-content_1">
+                            <div class="mod1-content1">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod-1-4.jpeg">
+                                </div>
+                                <p class="text-1">亿觅涂鸦《我的童年》 便携移动电源 </p>
+                                <p class="text-2">2300积分</p>
+                            </div>
+                            <div class="mod1-content2">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod-1-5.jpeg">
+                                </div>
+                                <p class="text-1">富士趣奇 instax mini8相机 （粉色）</p>
+                                <p class="text-2">72300积分</p>
+                            </div>
+                            <div class="mod1-content3">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod-1-6.jpeg">
+                                </div>
+                                <p class="text-1">富士 趣奇 mini相纸白边（20张）</p>
+                                <p class="text-2">1200积分</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod2" style="display: none">
+                        <div class="mod1-content">
+                            <div class="mod1-content1">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod2-1.jpeg">
+                                </div>
+                                <p class="text-1">德尔玛 静音净化加湿器</p>
+                                <p class="text-2">1000积分</p>
+                            </div>
+                            <div class="mod1-content2">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod2-2.jpeg">
+                                </div>
+                                <p class="text-1">沙宣 专业电吹风机</p>
+                                <p class="text-2">2000积分</p>
+                            </div>
+                            <div class="mod1-content3">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod2-3.jpeg">
+                                </div>
+                                <p class="text-1">飞利浦电动剃须刀 充电式</p>
+                                <p class="text-2">1800积分</p>
+                            </div>
+                        </div>
+                        <div class="mod1-content_1">
+                            <div class="mod1-content1">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod-2-4.jpeg">
+                                </div>
+                                <p class="text-1">三利 纯棉无捻纱绣小熊方巾/毛巾/浴巾</p>
+                                <p class="text-2">1100积分</p>
+                            </div>
+                            <div class="mod1-content2">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod-2-5.jpeg">
+                                </div>
+                                <p class="text-1">麦开 蓝牙4.0健康智能水杯</p>
+                                <p class="text-2">6300积分</p>
+                            </div>
+                            <div class="mod1-content3">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod-2-6.jpeg">
+                                </div>
+                                <p class="text-1">飞利浦 声波震动电动牙刷</p>
+                                <p class="text-2">3300积分</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mod3" style="display: none">
+                        <div class="mod1-content">
+                            <div class="mod1-content1">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod3-1.jpeg">
+                                </div>
+                                <p class="text-1">小甘菊柔皙护手霜20ml</p>
+                                <p class="text-2">200积分</p>
+                            </div>
+                            <div class="mod1-content2">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod3-2.jpeg">
+                                </div>
+                                <p class="text-1">自然乐园 芦荟舒缓保湿凝胶300ml</p>
+                                <p class="text-2">1000积分</p>
+                            </div>
+                            <div class="mod1-content3">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod3-3.jpeg">
+                                </div>
+                                <p class="text-1">丝塔芙洁面乳118ml</p>
+                                <p class="text-2">100积分</p>
+                            </div>
+                        </div>
+                        <div class="mod1-content_1">
+                            <div class="mod1-content1">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod-3-4.jpeg">
+                                </div>
+                                <p class="text-1">三迪逸品 包头巾 美容包头巾</p>
+                                <p class="text-2">400积分</p>
+                            </div>
+                            <div class="mod1-content2">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod-3-5.jpeg">
+                                </div>
+                                <p class="text-1">丽丽贝尔 化妆棉222片</p>
+                                <p class="text-2">222积分</p>
+                            </div>
+                            <div class="mod1-content3">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod-3-6.jpeg">
+                                </div>
+                                <p class="text-1">欧莱雅 (LOREAL）BB隔离露 SPF30+ </p>
+                                <p class="text-2">2400积分</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod4" style="display: none">
+                        <div class="mod1-content">
+                            <div class="mod1-content1">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod4-1.jpeg">
+                                </div>
+                                <p class="text-1">尚烤佳双人帆布条吊</p>
+                                <p class="text-2">1900积分</p>
+                            </div>
+                            <div class="mod1-content2">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod4-2.jpeg">
+                                </div>
+                                <p class="text-1">外交官 20英寸可登机轮拉杆箱 蓝色</p>
+                                <p class="text-2">10000积分</p>
+                            </div>
+                            <div class="mod1-content3">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod4-3.jpeg">
+                                </div>
+                                <p class="text-1">加加林 多功能护照包</p>
+                                <p class="text-2">750积分</p>
+                            </div>
+                        </div>
+                        <div class="mod1-content_1">
+                            <div class="mod1-content1">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod4-4.jpeg">
+                                </div>
+                                <p class="text-1">北极狐 防水耐磨双肩包 Kanken Classic</p>
+                                <p class="text-2">9600积分</p>
+                            </div>
+                            <div class="mod1-content2">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod4-5.jpeg">
+                                </div>
+                                <p class="text-1">烧烤世家 户外便携木炭烧烤炉</p>
+                                <p class="text-2">2000积分</p>
+                            </div>
+                            <div class="mod1-content3">
+                                <div class="mod1-content1-1">
+                                    <img src="/images/shequ/mod4-6.jpeg">
+                                </div>
+                                <p class="text-1">悠度 野餐垫 帐篷内垫 2mX2m</p>
+                                <p class="text-2">2000积分</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+<!--//下面的内容-->
+    <div >
+    <div class="main_container">
+        <!--//左面商品-->
+        <div class="main_container_left">
+            <div class="hd">推荐商品</div>
+            <div><hr style="width: 660px"></div>
+            <div id="content" >
+                <% if( Newsinfors.length >0){ %>
+                <ul>
+                    <% for(var i=0;i<Newsinfors.length ;i++) {%>
+                    <li>
+                        <div class="sp-a">
+                            <a href="/mallshow/GoodsDetail?GoodsId=<%=Newsinfors[i].GoodId%>">
+                                <div class="sp-b">
+                                    <img src="/upload/<%- Newsinfors[i].GoodPic%>" alt="Norway" style=" width:123px ;height:123px;margin: 20px 0 0px 43px ">
+                                    <!--<img class="sp-c" src="/images/xian.jpg" style="margin: 0 auto">-->
+                                    <!--<div style="width: 88%;height: 0.5px;background-color: #dadada;margin-left: 10px;margin-top: 20px"></div>-->
+                                    <div class="text1"><%= Newsinfors[i].GoodName%></div>
+                                    <div class="text2"><%- Newsinfors[i].GoodIntegral%>积分</div>
+                                    <!--<div  id="sp-c"><input type="button" value="立即兑换" id="btn-s1" ></div>-->
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <%}%>
+                </ul>
+                <%}%>
+            </div></div>
+        </div>
+    <!--//右面商品-->
+    <div class="main_container_right" >
+            <div >
+                <div style="margin-left: 35px;margin-top: -45px;font-size: 20px;color: #06B540">积分商城</div>
+                <ul class="get_jifen">
+                    <li style="margin-left: 0.1px"> 什么是【积分】以及怎么获得【积分】</li>
+                    <li>【积分 商 城 兑 换 规 则】新新版</li>
+                    <li>【积分商城2.0版】介绍及上新规则公告</li>
+                    <li>【积分窝手账本】献给不被打扰的时刻</li>
+                    <li style="margin-left: 0.1px"> 关于刷积分的【惩 罚 措 施】</li>
+                    <li>【积分 商 城 兑 换 规 则】新新版</li>
+                </ul>
+            </div>
+            <div  style="margin:15px 0 15px 35px ;font-weight: bold">相关小组</div>
+            <div class="m-group">
+                    <img width="240px" height="90px" src="/images/mall/Q63.jpeg">
+                    <div  style="margin-top: 10px"><p>457069成员 / 328 帖子</p></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<script src="/javascripts/jquery-3.1.0.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

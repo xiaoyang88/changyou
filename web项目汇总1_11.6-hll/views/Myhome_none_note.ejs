@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/Myhome_none_note.css"/>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+<body>
+<header>
+    <%- include ../util/header-All.ejs %>
+</header>
+<section class="MyhomeNoneNoteH">
+    <div>
+        <img class="banner" src="/images/Myhome_note/myhome_banner.png" alt="">
+    </div>
+    <div class="UserPic_divH">
+        <div class="Pic_divHL">
+            <img src="/upload/<%= mydata[0].UserPic %>" alt="">
+        </div>
+        <div class="UserName_divH"><span><%= mydata[0].UserName %></span></div>
+    </div>
+    <div class="navbarH">
+        <ul>
+            <a href="/users/myhome_note">
+                <li class=" active ">我的游记</li>
+            </a>
+            <a href="/users/myhome_question">
+                <li class="navbarH_li">我的问答</li>
+            </a>
+            <a href="/users/myhome_exchange">
+                <li class="navbarH_li">我的兑换</li>
+            </a>
+            <a href="/users/personal_setting">
+                <li class="navbarH_li">我的资料设置</li>
+            </a>
+        </ul>
+    </div>
+    <div class="travelNote_conH">
+        <div class="travelContentH">
+            <div class="bar_H">
+                <p>我的游记</p>
+            </div>
+        </div>
+        <div class="travel_none_iconH">
+            <img src="/images/Myhome_note/travel_none_icon.png">
+            <span>您还未发表过游记呢，快去分享您的游记吧。</span>
+        </div>
+        <a href="/contentData/writeNote">
+            <div class="writeDiaryH">
+                <img src="/images/Myhome_note/icon_writeDiaryWhite.png" alt="">
+                <span>去发表游记</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+</body>
+</html>

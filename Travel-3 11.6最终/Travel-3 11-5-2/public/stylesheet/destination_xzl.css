@@ -1,0 +1,296 @@
+/*++++++++++++++++++++++++++++++++++++xzl+++++++++++++++++++++++++++++++++++++++*/
+.toolbar_x{
+    background: #1DCDAD;
+    width: 100%;
+    height: 50px;
+
+}
+#navToolBarPanel_X{
+    border: 0px;
+    height:50px;
+    background:  #1DCDAD;
+}
+#navToolBarPanel_X .x-button{
+    margin-left: 80%;
+    margin-top: 6px;
+    background:  #1DCDAD;
+    border: 0;
+    height: 32px;
+
+}
+.panel_X{
+    background: url("../images/destination_xzl/6.jpg");
+    width: 100%;
+    height: 200px;
+}
+.center_X{
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    font-family: 微软雅黑;
+    margin-left: 20px;
+    /*   background-color: #0A5A88;*/
+    color: #6E6E6E;
+    font-size: 20px;
+}
+.bottom_X{
+    width: 100%;
+    height: 500px;
+    background-color: #0A5A88;
+}
+#img_x{
+    margin: 20px;
+}
+.City_container{
+    display: inline-block;
+    margin:5px 5px 10px 20px;
+    float: left;
+    width: 150px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 2px #ffffff;
+
+
+}
+#City_Describe p{
+    font-size: 10px;
+    color: #767676;
+    font-family: 微软雅黑;
+}
+.LoginPanel_x{
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+
+#button_x{
+    background:#1DCDAD;
+    width: 80%;
+    color: white;
+    margin: auto;
+    margin-top: 25px;
+    border: none;
+}
+#Registerbutton_x{
+     background:#1DCDAD;
+     width: 80%;
+     color: white;
+     margin: auto;
+     margin-top: 5px;
+    border: none;
+ }
+.inputLogin_x{
+    /*  margin-top: 2px;*/
+    background: #1DCDAD;
+    margin: 0 15px 0 15px;
+
+}
+#divHtml_X{
+
+    float: left;
+    color: #ffffff;
+    width: 100%;
+}
+#divHtml_X img{
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 3px;
+}
+#divHtml_X span{
+    position: relative;
+    top: -6px;
+    margin-left:32% ;
+}
+#divMyAlbum_x{
+    float: right;
+    margin-right: 15px;
+}
+.divH_z{
+    width: 25px;
+    height:25px ;
+}
+.divH_z_HH{
+    margin-left: 35%;
+    position: relative;
+    top: -5px;
+    font-size: 18px;
+}
+/*#divH_x{
+
+    width: 100%;
+    color: #ffffff;
+    font-size:20px;
+}*/
+#divh_x{
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+    border:solid 2px #ffffff;
+    border-radius: 5px;
+}
+.chanyou_HH_div{
+    text-align: center;
+    width: 100%;
+}
+.chanyou_HH{
+    width: 120px ;
+    margin-top:70px;
+}
+#divH_x a{
+    color:#ffffff;
+}
+
+#RegisterButton{
+    background:#1DCDAD;
+    width: 80%;
+    color: white;
+    margin: auto;
+    margin-top: 25px;
+    border: none;
+}
+#unregister_H{
+    background:#1DCDAD;
+    width: 80%;
+    color: white;
+    margin: auto;
+    margin-top: 5px;
+    border: none;
+}
+#txt_name{
+    border: 1px solid  rgba(215, 215, 215,1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+}
+#txt_password{
+    border: 1px solid  rgba(215, 215, 215,1);
+    width: 80%;
+    margin: auto;
+}
+.txt_p{
+    border: 1px solid  rgba(215, 215, 215,1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 80%;
+    margin: auto;
+}
+#txt_name input,#txt_password input,.txt_Password input{
+    width: 90%;
+    outline: none;
+    border-radius: 5px;
+}
+#dataview_x{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 1px rgba(215, 215, 215,0.9);
+    margin-top: 100px;
+}
+#NAme_x{
+    color: #ffffff;
+}
+#comment_x{
+    background:#ffffff;
+    height:45px;
+    width: 100%;
+}
+#commentInput_x{
+    margin-top: 8px;
+    margin-left:35px;
+    border-radius: 5px;
+    border: 1px solid #1DCDAD;
+    padding: 0px 10px;
+    width: 80%;
+    height: 30px;
+    font-family: "Hiragino Sans GB", STHeiti, "微软雅黑", Arial, verdana, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, STHeiti;
+}
+#noteDetailDataview{
+    font-family: "Hiragino Sans GB", STHeiti, "微软雅黑", Arial, verdana, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, STHeiti;
+}
+#divC_x{
+    width: 100%;
+    height: 32px;
+    color: #ffffff;
+    font-size:20px;
+}
+#divC_x a{
+    color:#ffffff;
+}
+#divCommnet_X{
+
+    margin: 15px;
+    float: left;
+    color: #ffffff;
+}
+#divc_x{
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+
+}
+.CommnetPanel_x{
+    background:#ffffff;
+    width: 100%;
+    height: 100%;
+}
+#textarea_x{
+    width: 100%;
+}
+
+/*=====点赞、收藏=================*/
+#praise_X{
+    margin-left:60%;
+}
+
+#praise_X,#collect_X {
+    background:none;
+    border:none;
+}
+#backButton_X img,#backButton_X1{
+    width: 28px;
+    height:28px;
+    margin-top: 5px;
+}
+#collectButton_X img,#collectButton_X1 img{
+    /* display: none;*/
+    width: 34px;
+    height: 34px;
+    margin-top: 4px;
+}
+
+
+/*============================= 问题======================================*/
+#QuestionName{
+    background: #ffffff;
+    height: 50px;
+}
+#QuestionDetails{
+    background: #ffffff;
+    height: 100px;
+}
+#QuestionName input{
+    background: transparent;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+
+}
+#QuestionDetails input{
+    background: transparent;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+
+}
+#QuestionButton_x{
+    background:#1DCDAD;
+    width: 80%;
+    color: white;
+    margin: auto;
+    margin-top: 25px;
+    border: none;
+}

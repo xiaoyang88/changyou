@@ -1,0 +1,64 @@
+
+section{
+    width: 960px;
+    margin: auto;
+}
+input{
+    outline: none;
+}
+.note_hd{
+    margin-top: 50px;
+}
+.note_hd p{
+    font-size: 25px;
+    color: #00B895;
+}
+.title_lable{
+    font-size: 16px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+#NoteTitle{
+    width: 430px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #00B895;
+    padding-left: 10px;
+    padding-right: 10px ;
+}
+.file_div{
+    padding: 20px 0;
+}
+.title_lable2{
+    float: left;
+}
+#br_label{
+    position: relative;
+    top: 10px;
+    margin-left: 70px;
+    font-size: 12px;
+    color: #A9A9A9;
+}
+#editor{
+    border-radius: 3px;
+}
+button{
+    width: 120px;
+    height: 36px;
+    background-color: #00B895;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*position: relative;
+    top:30px;*/
+    /*margin: 30px 0px 0px 0px;*/
+}
+button span{
+    color: white;
+}
+button:hover{
+    background-color:#06B540;
+}

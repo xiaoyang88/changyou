@@ -1,0 +1,250 @@
+
+/* 头部信息 */
+body{
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    font-size: 16px;
+    margin: auto;
+    padding: 0px;
+    background-color:  	#F3F3F3;
+}
+
+/* 搜索栏 */
+#sousuo{
+    width: 960px;
+    height: 100px;
+    /*  background-color: #00B7FF;*/
+    margin: auto;
+    position: relative;
+    top:30px;
+}
+.sousuo{
+    margin-top: 40px;
+}
+#ssk,#pic1,#kefu{
+    float: left;
+}
+#pic1{
+    margin-left: 100px;
+}
+#ssk{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+#ssl{
+    width:230px;
+    height: 30px;
+}
+#ssan{
+    border:none;
+    color: white;
+    font-size: 18px;
+    background-color: #FF9D00;
+    width: 60px;
+    height:36px;
+    position:relative;
+    left: -8px;
+    top:1px;
+}
+#kefu{
+    margin-left: 80px;
+    margin-top:20px ;
+}
+#kfrx{
+    font-size: 25px;
+    color:#606060 ;
+}
+#lxfs{
+    font-size: 25px;
+    color: #FF9D00;
+}
+
+
+#title{
+    width: 300px;
+    height: 85px;
+    margin: auto;
+    position: relative;
+    top:30px;
+}
+#title2{
+    font-family:华文行楷  ;
+    font-size: 30px;
+    position: relative;
+    top:-60px;
+    left:85px;
+}
+
+/*整体*/
+#form-c{
+    width: 960px;
+    border-color:#FF9D00 ;
+    margin: auto;
+    margin-top: 60px;
+}
+
+/*购物车*/
+#cart1{
+    width: 960px;
+    height: 45px;
+    background-color: #FF9D00;
+}
+#pic-1{
+    width: 350px;
+    margin-left: 90px;
+    margin-top: 5px;
+    float: left;
+}
+
+#checkbox1{
+    width: 300px;
+    height: 30px;
+    margin-top: 12px;
+    margin-left: 90px;
+    background-color: #FF9D00;
+    font-size: 20px;
+    color: white;
+    text-align: right;
+    float: left;
+}
+
+#con{
+    width: 960px;
+    height: 40px;
+    margin-top: 10px;
+}
+.con1{
+    width: 400px;
+    line-height: 40px;
+    float: left;
+    text-align:center;
+}
+.con2{
+    width: 100px;
+    line-height: 40px;
+    float: left;
+    margin-left: 40px;
+    text-align: center;
+}
+#goods-con{
+    width: 960px;
+    height: 160px;
+    border: 1px solid #f7f7f7;
+    margin-top: 20px;
+}
+.goods-con1{
+    width: 360px;
+    height: 120px;
+    margin:20px;
+    float: left;
+}
+.goods-con1-1{
+    width: 20px;
+    height: 120px;
+    float: left;
+}
+.goods-con1-2{
+    width: 160px;
+    height: 120px;
+    float: left;
+    margin-left: 10px;
+}
+.goods-con2-3{
+    width: 160px;
+    height: 120px;
+    float:right;
+    font-size: 12px;
+}
+.goods-con2{
+    width: 100px;
+    height: 120px;
+    margin-left:40px;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+.goods-con3{
+    width: 100px;
+    height: 120px;
+    margin-left:40px;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+}
+.buy-bt1{
+    color:#06B540 ;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.change_now{
+    background-color: #06B540 ;
+    color: white;
+}
+.buy-price{
+    font-size: 18px;
+    background-color:#f7f7f7 ;
+    height: 40px;
+    border: 0;
+    width: 230px;
+}
+.yryy-content{
+    width: 80%;
+    margin:  0 auto;
+    background-color: white;
+    height:500px;
+}
+.buy-price p{
+   padding-top: 8px;
+}
+.buy-contright{
+    float: left;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.buy-contleft{
+    float: left;
+    width: 500px;
+    margin-left: 50px;
+    border: 1px solid gainsboro;
+    padding:0 0 0 50px ;
+    margin-top:25px;
+}
+.buy-yunfeileft{
+    font-size: 16px;
+    margin-top: 30px;
+
+}
+.buy-yunfeiright {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.buy-yunfeiright .ipaddr{
+    margin-left: -10px;
+}
+.buy-yunfeiright .ipaddr_second{
+    margin-left: 10px;
+
+}
+.buy_shuliang_count{
+    font-size: 16px;
+}
+.buy_shuliang_count input{
+    height: 30px;
+    width: 150px;
+    margin-left: 10px;
+    border: 1px solid  #F3F3F3;
+}
+.success_change{
+    background-color: #06B540 ;
+    border: 0;
+    height: 40px;
+    width: 228px;
+    margin-top: 10px;
+    color: white;
+
+}
+
+

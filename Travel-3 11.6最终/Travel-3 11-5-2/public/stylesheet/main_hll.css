@@ -1,0 +1,332 @@
+
+/*首页star*/
+#mainviewPanel .x-scroll-bar-y.active {
+    width: 0px;
+}
+#TopPane1{
+    position: relative;
+    z-index:10;
+    padding-left: 20px;
+    background-color: #1DCDAD;;
+}
+#logo{
+     float: left;
+     width: 21%;
+     height: 25px;
+     margin: 3px 10px 0px 6px;
+     background:url("../images/main_hll/l_sencha.png")no-repeat;
+     background-size: 100% 100% ;
+     /*background-position: 0px -109px;<div><img src="public/images/main_hll/l_sencha.png" alt="">*/
+ }
+
+#searchbar{
+    background-color: transparent;
+    border: 1px solid white;
+   /* margin: auto;*/
+    margin-left: 95px;
+    width:60%;
+    height:30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.searchIcon{
+    width:20px;
+    height: 20px;
+    margin: 5px 10px 0px 0px;
+    float: right;
+    background:url("../images/main_hll/searchIcon.png")no-repeat;
+    background-size: 100% 100% ;
+}
+.search_input{
+    display: inline-block;
+    width: 70%;
+    height: 25px;
+    /*margin: 5px 0px 0px 0px ;*/
+    padding-left: 15px;
+    padding-bottom: 5px;
+    border: none;
+    font-size: 12px;
+    color: white;
+    background-color: transparent;
+}
+#login{
+    display: inline-block;
+    float: right;
+    margin-top: -25px;
+    margin-right: 15px;
+    width: 12%;
+    color: white;
+    border: 0;
+}
+.carouselImg{
+    max-width: 100%;
+}
+#mainNoteview{
+    width: 100%;
+    margin-top: 10px;
+}
+#mainNoteshow{
+    width: 100%;
+    /* height: 20vw;*/
+    height: 75px;
+    background-color: white;
+}
+.hotIcon{
+    width: 50px;
+    height: 50px;
+    /*background:url("images/HLL/note_hot.png");*/
+    background:url("../images/main_hll/note_hot.png");
+    background-size: 100% 100% ;
+    position: relative;
+    top: 14px;
+    left: 25px;
+}
+.hotTitle{
+    font-size: 18px;
+    position: relative;
+    top: -32px;
+    left: 90px;
+}
+.hotTitle2{
+    font-size: 14px;
+    position: relative;
+    top: -8px;
+    left: 18px;
+}
+.hotImg{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin: -30px 20px 0px 0px;
+}
+.noteContainer{
+    width: 100%;
+    margin-top: 10px;
+    background: white;
+    border-bottom: 1px solid rgba(215, 215, 215,1);
+    box-shadow: 1px 1px 6px 1px rgba(215, 215, 215,0.9);
+}
+.noteinfo_a{
+    text-decoration: none;
+    color: black;
+}
+.NoteImg{
+    width: 100%;
+    height: 170px;
+}
+.note_userpic{
+    margin:auto;
+    margin-top: -35px;
+    position: relative;
+    z-index: 10;
+    width: 57px;
+    height:57px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.userpicH{
+
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+}
+.UserName{
+    text-align: center;
+    font-size: 16px;
+}
+.noteTitle{
+    text-align: center;
+    padding-top: 5px;
+    font-weight:bold;
+}
+.noteContent{
+    padding: 5px 15px 15px 15px;
+    font-size: 16px;
+
+}
+
+/*首页end*/
+
+/*ToolBar  star*/
+#navToolBarPanel{
+    border: 0px;
+    height:50px;
+    background: white;
+    border-top: 1px solid rgba(215, 215, 215,1);
+    box-shadow: 1px 1px 6px 1px rgba(215, 215, 215,0.9);
+}
+#navToolBarPanel .x-button{
+    margin-top: 1px;
+    background: white;
+    border: 0px;
+    width: 23%;
+    height: 50px;
+}
+.toolImg{
+    width: 35%;
+    display: inline-block;
+}
+.M_icon_H{
+    margin-top: -5px;
+    margin-right: 2px;
+    width: 100%;
+    color: #1DCDAD;
+    font-size: 12px;
+}
+.M_icon_H2{
+    margin-top: -5px;
+    margin-right: 2px;
+    width: 100%;
+    color: rgba(215, 215, 215,1);
+    font-size: 12px;
+}
+/*ToolBar  end*/
+
+
+/*NoteInfoDetail   star*/
+#noteinfoviewPanel .x-scroll-bar-y.active {
+    width: 0px;
+}
+
+#noteinfo_top{
+    height: 50px;
+    background-color: #1DCDAD;
+}
+.noteinfo_back{
+    width: 22px;
+    height:22px;
+    margin-top: 15px;
+    margin-left:10px;
+}
+.hotNote_p{
+    vertical-align:middle;
+    line-height: 60px;
+    margin-left: 50px;
+    color: white;
+    font-size: 18px;
+}
+.noteDetailImg_H{
+    width: 100%;
+    height: 160px;
+}
+.noteDetailImg_H2{
+    width: 90%;
+    height: 160px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+.DetailUserPicH_Con{
+    position: relative;
+    z-index: 10;
+    width: 57px;
+    height:57px;
+    margin-left: 35px;
+    top: -20px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.DetailUser_H{
+    float: left;
+    margin: -60px 0px 0px 100px ;
+}
+.DetailUserName_H{
+    font-size: 16px;
+}
+.DetailTime_H{
+    font-size: 12px;
+}
+.DetailTname_H{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+.DetailUserPicH{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+}
+.DetailTrvaelContnet_H{
+    clear: both;
+    padding: 10px 10px 0px 15px;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.DetailTrvaelContnet_H img{
+    /*margin-top: 0px;*/
+    width: 95%;
+    height: 170px;
+    margin: auto;
+}
+/*NoteInfoDetail   end*/
+/* 评论样式 star*/
+.pinglun_container_h{
+    width: 100%;
+    border-top: 1px solid rgba(215, 215, 215,1);
+}
+.pinglunDiv_H{
+    display: inline-block;
+    height: 50px;
+    margin: 20px 0px 0px 15px;
+}
+.pinglunDiv_H img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius:50% ;
+}
+#commentUserName_x{
+    float: right;
+    padding: 0px 6px;
+    margin-top:15px;
+}
+#Comment_Contnet_X{
+    margin: 12px 0px 0px 20px;
+    line-height: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+#CommentTime_X{
+    font-size: 12px;
+    padding: 10px 10px;
+    text-align: right;
+}
+
+
+/* 评论样式 end*/
+
+/* 评论界面 */
+#Textarea_x{
+    border-bottom: 1px solid #1DCDAD;
+    /*-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; ;*/
+    margin: auto;
+}
+#CommentButton_x{
+    background:#1DCDAD;
+    float: right;
+    width: 100px;
+    color: white;
+    margin: 10px 10px 0px 0px ;
+    border: none;
+}
+
+
+
+/* 评论界面 */
+
+
+
+.TravelNoteTime_HH{
+    text-align: right;
+    padding-right: 15px;
+}

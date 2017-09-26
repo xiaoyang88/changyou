@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>注册</title>
+    <link rel="stylesheet" href="/stylesheets/reg.css">
+    <script type="text/javascript" src="/javascripts/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="/javascripts/register.js"></script>
+</head>
+
+<body>
+<div class="logo_Div"><img src="/images/login_register/register.png" alt=""></div>
+<div class="form-div">
+    <form id="frmUploadFile" action='/users/registerJudge' method="post">
+        <div class="input_div_H" id="input_divUserId_H">
+            <div class="input_userId_H">用户名：</div>
+            <input type="text" class="" id="userName" name="userName"
+                   placeholder="请输入您的账号" value="" onblur="loseBlur()">
+        </div>
+        <div id="UserIdMessage"></div>
+
+        <div class="input_div_H UserPwd" id="input_divUserpwd1_H">
+            <div class="input_userId_H ">密码：</div>
+            <input type="password" class="" id="UserPwd1" name="userPwd1" placeholder="请输入您的密码" value="">
+        </div>
+        <div id="PwdMessage"></div>
+
+
+        <div class="input_div_H UserPwd" id="input_divUserpwd2_H">
+            <div class="input_userId_H ">确认密码：</div>
+            <input type="password" class="" id="UserPwd2" name="userPwd2" placeholder="请输入您的密码" value="">
+        </div>
+        <div id="PwdMessage2"></div>
+
+
+        <div class="input_div_H UserPwd" id="input_divUserTel_H">
+            <div class="input_userId_H ">电话：</div>
+            <input type="text" class="" id="UserTel" name="UserTel"
+                   placeholder="请输入您的电话号码" value="" required="required">
+        </div>
+        <div id="TelMessage"></div>
+
+
+        <div class="buttons">
+            <input value="注 册" type="submit" id="sub">
+            <div> <%= title %></div>
+        </div>
+        <p class="backIndex">
+            <a href="/">返回首页 </a>
+        </p>
+    </form>
+</div>
+
+<!--<script type="text/javascript">
+    $(document).ready(function(){
+        $('#frmUploadFile').easyform();
+    });
+</script>-->
+
+</body>
+</html>

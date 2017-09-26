@@ -1,0 +1,123 @@
+*{
+    font-family:微软雅黑;
+    padding: 0px ;
+    margin: 0px;
+}
+ul li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+section{
+    width: 960px;
+    margin: auto;
+}
+.banner{
+    width: 960px;
+    height: 470px;
+}
+.UserPic_divH{
+    border: 1px solid #dde0df;
+}
+.Pic_divHL{
+    width:70px ;
+    height:70px;
+    border-radius: 50%;
+    margin: 10px 0px 10px 30px ;
+    box-shadow: 0 0 3px rgba(0,0,0,.6);
+    display: inline-block;
+}
+.Pic_divHL img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.UserName_divH{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -25px;
+    margin: 0px 0px 0px 20px;
+}
+.navbarH{
+    height: 51px;
+    border: 1px solid #dde0df;
+}
+.navbarH ul li{
+    padding: 15px 40px ;
+    float: left;
+    font-weight:bold;
+    border-right: 1px solid #dde0df;
+    border-bottom: 1px solid #dde0df;
+}
+.navbarH_li{
+    color: #605951;
+    background-color: #F8F8F8;
+}
+.navbarH_li:hover{
+    background-color: white;
+}
+.active{
+    color: #72AF8B;
+    background-color: white;
+}
+.travelNote_conH{
+    width: 960px;
+    margin-top: 50px;
+}
+.travelAnswerH p{
+    clear:both;
+    font-size: 18px;
+    background-color: red;
+}
+.wenda_divH{
+    border: 1px solid #dde0df;
+    margin-top: 20px;
+    padding: 20px;
+    width: 700px;
+    background-color: white;
+}
+.wenda_divH p,.wenda_divH span,.wenda_divH a{
+    background-color: white;
+
+}
+.wenda_p{
+    padding: 10px;
+    font-size: 16px;
+    color: #0073B6;
+}
+.wenda_QcH{
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    overflow: hidden;
+}
+.wenda_time{
+    color: #959595;
+    font-size: 12px;
+    padding: 10px;
+}
+.wenda_time2{
+    font-size: 12px;
+    padding: 10px;
+}
+.wenda_delete{
+    float: right;
+    font-size: 14px;
+    margin: -25px 20px 0px 0px;
+}
+.wenda_delete a{
+    color: #0073B6;
+}
+
+
+

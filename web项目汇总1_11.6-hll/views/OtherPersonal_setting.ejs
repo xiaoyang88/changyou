@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/OtherPersonal_setting.css" type="text/css">
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+
+<body>
+<header>
+    <%- include ../util/header-All_Other.ejs %>
+
+</header>
+<%if(UserInfoDataH.length>0){%>
+<section style="margin: auto;width: 960px">
+    <div class="UserPic_divH">
+        <div class="Pic_divHL">
+            <img src="/upload/<%= UserInfoDataH[0].UserPic %>" alt="">
+        </div>
+        <div class="UserName_divH"><span><%= UserInfoDataH[0].UserName %></span></div>
+
+    </div>
+    <div class="navbarH">
+        <ul>
+            <a href="/users/Otherhome_note_here?username=<%= UserInfoDataH[0].UserName %>">
+                <li class="  navbarH_li">Ta 的游记</li>
+            </a>
+            <a href="/users/Otherhome_question?username=<%= UserInfoDataH[0].UserName %>">
+                <li class="navbarH_li">Ta 的问答</li>
+            </a>
+            <a href="/users/Otherhome_exchange?username=<%= UserInfoDataH[0].UserName %>">
+                <li class="navbarH_li">Ta的兑换</li>
+            </a>
+            <a href="/users/OtherPersonal_setting?username=<%= UserInfoDataH[0].UserName %>">
+                <li class="active">Ta 的资料</li>
+            </a>
+        </ul>
+    </div>
+    <div class="sec_left">
+        <!--个人信息设置-->
+        <div id="li0_Con" class="sec_right_Con" style="display: block">
+            <div class="detail_header">
+                <h2>Ta 的信息</h2>
+                <hr style="border-bottom: 1px solid rgba(0, 0, 0, 0.2);">
+                <form action="/users/myInfoUpDate_H" method="post">
+                    <table>
+                        <tr>
+                            <td class="td1">用户名：</td>
+                            <td style="padding-top: 12px;padding-left: 5px">
+                                <span style=""><%= UserInfoDataH[0].UserName %> </span>
+                            </td>
+                        </tr>
+                        <tr class="warn_tr">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">性别：</td>
+                            <td class="td2" >
+                                    <span class="radio_input"><%= UserInfoDataH[0].Gender %></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Tel：</td>
+                            <td class="td2">
+                                <span class="radio_input"><%= UserInfoDataH[0].TEL %></span>
+                            </td>
+                        </tr>
+                        <tr class="warn_tr">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<%}%>
+</body>
+</html>
+<script src="/javascripts/jquery-3.1.0.js"></script>
+<!--<script src="/javascripts/setting.js"></script>-->
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="/javascripts/personal_setting.js"></script>-->

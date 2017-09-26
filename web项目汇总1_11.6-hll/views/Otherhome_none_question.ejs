@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/Myhome_none_question.css"/>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+<body>
+<header>
+    <%- include ../util/header-All_Other.ejs %>
+</header>
+<section style="margin: auto;width: 960px">
+    <div class="UserPic_divH">
+        <div class="Pic_divHL">
+            <img src="/upload/<%= MyData[0].UserPic %>" alt="">
+        </div>
+        <div class="UserName_divH"><span><%= MyData[0].UserName %></span></div>
+    </div>
+    <div class="navbarH">
+        <ul>
+            <a href="/users/Otherhome_note_here?username=<%= MyData[0].UserName %>">
+                <li class="  navbarH_li">Ta的游记</li>
+            </a>
+            <a href="/users/Otherhome_question?username=<%= MyData[0].UserName %>">
+                <li class="active">Ta的问答</li>
+            </a>
+            <a href="/users/Otherhome_exchange?username=<%= MyData[0].UserName %>">
+                <li class="navbarH_li">Ta的兑换</li>
+            </a>
+            <a href="/users/OtherPersonal_setting?username=<%= MyData[0].UserName %>">
+                <li class="navbarH_li">Ta的资料</li>
+            </a>
+        </ul>
+    </div>
+    <div class="travelNote_conH">
+        <div class="travelContentH">
+            <div class="bar_H">
+                <p>Ta的问答</p>
+            </div>
+        </div>
+        <div class="travel_none_askH">
+            <img src="/images/Myhome_question/ask_none_icon.png">
+            <span>Ta最近有些沉默，还没有提问过呢。</span>
+        </div>
+        <!--<a href="/users/CQuestion">
+            <div class="writeAskH">
+                <img src="/images/Myhome_question/icon_writeDiaryWhite.png" alt="">
+                <span>去提问</span>
+            </div>
+        </a>-->
+    </div>
+</section>
+</body>
+
+</html>

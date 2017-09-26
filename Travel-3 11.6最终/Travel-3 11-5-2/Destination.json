@@ -1,0 +1,84 @@
+{"success":true,
+  "Destinations":[
+    {
+      "CityName":"上海",
+      "Pic":"public/images/destination_xzl/shanghai.jpg",
+      "Describe":"上海是一座国家历史文化名城，拥有深厚的近代城市文化底蕴和众多历史古迹。江南传统吴越文化与西方传入的工业文化相融合形成上海特有的海派文化"
+
+    }
+  ,
+    {
+      "CityName":"南京",
+      "Pic":"public/images/destination_xzl/nanjing.jpg",
+      "Describe":"南京是中国四大古都、首批国家历史文化名城[5]  ，是中华文明的重要发祥地[6]  ，历史上曾数次庇佑华夏之正朔，长期是中国南方的政治、经济、文化中心。南京地区早在100至120万年前就有古人类活动，35至60多万年前已有南京猿人在南京汤山生活。[7]  公元229年，吴大帝孙权在此建都，此后东晋、南朝的刘宋、萧齐、萧梁、陈均相继在此建都，故南京有“六朝古都”之称。继此之后，南京又先后成为杨吴西都、南唐国都、南宋行都、明朝京师、太平天国天京、中华民国首都，故又称“十朝都会"
+
+    }
+  ,
+    {
+      "CityName":"乌镇",
+      "Pic":"public/images/destination_xzl/wuzhen.jpg",
+      "Describe":"乌镇古名乌墩、乌戍。乌镇处于河流冲积平原，沼多淤积土，故地脉隆起高于四旷，色深而肥沃，遂有乌墩之名。距乌镇9公里处有一村叫红墩，其镇志上说：“红墩在镇西，地脉坟起，厥土赤壤，村以是名。”又旁有一村名紫墩，就是因为多紫色石土的缘故"
+
+    }
+  ,
+
+    {
+    "CityName":"香港",
+    "Pic":"public/images/destination_xzl/HongKong.jpg",
+    "Describe":"代表景点：星光大道，太平山，香港海洋公园，香港迪士尼"
+
+  },
+    {
+      "CityName":"澳门",
+      "Pic":"public/images/destination_xzl/macau.jpg",
+      "Describe":"代表景点：大三巴牌坊，大炮台，议事亭前地，玫瑰堂"
+
+    },
+    {
+      "CityName":"台湾",
+      "Pic":"public/images/destination_xzl/taiwan.jpg",
+      "Describe":"代表景点：台北101大楼，国立故宫博物院，西门町"
+
+    } ,{
+      "CityName":"台北",
+      "Pic":"public/images/destination_xzl/taibei.jpg",
+      "Describe":"代表景点：台北101大楼，国立故宫博物院，西门町"
+
+    },
+    {
+      "CityName":"苏州",
+      "Pic":"public/images/destination_xzl/suzhou.jpg",
+      "Describe":"苏州素来以山水秀丽、园林典雅而闻名天下，有“江南园林甲天下，苏州园林甲江南”的美称，又因其小桥流水人家的水乡古城特色，有“东方水都”之称"
+
+    }
+  ,
+    {
+      "CityName":"杭州",
+      "Pic":"public/images/destination_xzl/hangzhou.jpg",
+      "Describe":"著名的旅游胜地有瑶琳仙境、桐君山、雷峰塔、岳庙、三潭映月、苏堤、六和塔、宋城、南宋御街、灵隐寺、跨湖桥遗址等"
+
+    }
+  ,
+
+    {
+      "CityName":"洛阳",
+      "Pic":"public/images/destination_xzl/luoyang.jpg",
+      "Describe":"洛阳有着5000多年文明史、4000年的建城史[1]  和1500多年的建都史，先后有105位帝王在此定鼎九州。是华夏文明的发源地之一、中华民族的发祥地之一。是隋唐大运河的重要枢纽。牡丹因洛阳而闻名于世，被誉为“千年帝都，牡丹花城"
+
+    }
+  ,
+    {
+      "CityName":"北京",
+      "Pic":"public/images/destination_xzl/beijing.jpg",
+      "Describe":"北京是首批国家历史文化名城和世界上拥有世界文化遗产数最多的城市，三千多年的历史孕育了故宫、天坛、八达岭长城、颐和园等众多名胜古迹。早在七十万年前，北京周口店地区就出现了原始人群部落“北京人”。公元前1045年，北京成为蓟、燕等诸侯国的都城。公元938年以来，北京先后成为辽陪都、金中都、元大都、明清国都。1949年10月1日成为中华人民共和国首都。"
+
+    }
+  ,
+    {
+      "CityName":"深圳",
+      "Pic":"public/images/destination_xzl/shenzhen.jpg",
+      "Describe":"深圳的旅游娱乐资源和设施独具特色，拥有世界最大的风景微缩区锦绣中华、 世界之窗；主题公园欢乐谷等，还有大梅沙、南澳等海滩、海滨浴场，和众多的现代化观光娱乐场所"
+
+    }
+  ]
+}

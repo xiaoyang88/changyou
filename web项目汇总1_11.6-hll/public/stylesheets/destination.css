@@ -1,0 +1,307 @@
+body{
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    font-size: 16px;
+    margin: auto;
+    padding: 0px;
+    color: #666;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+ul li {
+    list-style-type: none;
+}
+nav{
+    background-color: white;
+    height: 58px;
+    width: 1349px;
+}
+#nav_container{
+    margin-left: 175px;
+    height: 58px;
+    width: 1000px;
+
+}
+#nav_logo{
+    float: left;
+    height: 58px;
+    width: 190px;
+    text-align: center;
+}
+#nav_logo img{
+    width: 160px;
+    height: 50px;
+    margin: 5px 0px 0px 10px;
+    margin-top: 5px;
+}
+/*导航栏中间菜单*/
+#nav_menu{
+    float: left;
+    height: 58px;
+}
+#nav_menu ul{
+    float: left;
+    margin: 0px;
+    padding-left: 0px;
+}
+#nav_menu ul li {
+    float: left;
+    height: 54px;
+    width: 90px;
+    line-height:55px;
+    text-align: center;
+}
+#nav_menu ul li a{
+    padding: 20px 10px 20px 10px;
+}
+#nav_on2{
+    background-color:#FF9D00 ;
+    border-bottom: 4px solid;
+    border-bottom-color:  #FF9D00;
+}
+#nav_on2 a{
+    color: white;
+}
+.nav_on{
+    border-bottom: 4px solid;
+    border-bottom-color:  #FF9D00;
+}
+.nav_on a{
+    color: #FF9D00;
+}
+.nav_out{
+    background-color: white;
+}
+.nav_out a{
+    color: black;
+}
+/*导航栏右边图标 微博、qq、微信，登录注册*/
+#nav_login{
+    float: right;
+    height: 58px;
+}
+#weibo_login,#qq_login,#weixin_login{
+    display: inline-block;
+    margin:16px 6px 0px 0px;
+    width: 30px;
+    height: 30px;
+    background:url("/images/index/header-sprites.png");
+    cursor: pointer;
+}
+#weibo_login{
+    background-position: 0 -50px;
+}
+#qq_login{
+    background-position: 170px -50px;
+}
+#weixin_login{
+    background-position: 0px -164px;
+}
+#login_in{
+    float: right;
+    margin: 22px 5px 0 0;
+    text-align: center;
+    color:#C9C9C9 ;
+}
+#login_in a{
+    font-size: 14px;
+    color: #FF9D00 ;
+}
+#login_in a:hover{
+    text-decoration: underline;
+    color: #FF9D00  ;
+}
+#weibo_login:hover{
+    background:url("/images/index/header-sprites.png");
+    background-position: 0 -80px;
+}
+#qq_login:hover{
+    background:url("/images/index/header-sprites.png");
+    background-position: 170px -80px;
+}
+#weixin_login:hover{
+    background:url("/images/index/header-sprites.png");
+    background-position: 170px -164px;
+}
+
+
+
+.comtent{
+    margin: 0 auto;
+    width:100%;
+
+}
+/*头图片*/
+.bg-image{
+    background: url("/images/mudidi/bg-1.jpg") ;
+    width: 100%;
+    height: 500px;
+
+}
+.search-1{
+    width: 400px;
+    height:130px;
+    background-color:black;
+    position: relative;
+    top: 190px;
+    left:200px;
+   background-color: rgba(0,0,0,0.5);
+    border-radius: 7px;
+}
+
+.search-1 h2 {
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+    padding-left: 13px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+
+ .search-2{
+    width: 300px;
+    height: 30px;
+    color: white;
+    border-radius: 6px;
+    margin-top: -30px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 0 none;
+ }
+
+.search-1 p{
+    color: white;
+    margin-left: 12px;
+    font-size: 18px;
+
+}
+.tet-search{
+  margin-left: 800px;
+}
+.tet-search img{
+    display: block;
+    margin-left: -180px;
+    margin-top: 30px;
+}
+.tet-search p h5,h4,h2{
+    color: white;
+    line-height: 60px;
+}
+/*主要内容热门目的地*/
+.hot{
+    margin:  0 auto ;
+}
+.hot-list{
+    line-height: 30px;
+    margin:  0;
+    padding: 0;
+}
+.hot-list .col{
+    float:left;
+    display: block;
+    width: 470px;
+    margin-left:135px;
+}
+.hot-list dl{
+    border-bottom: 1px dashed #eee;
+    padding: 20px 50px 30px 15px;
+}
+.hot-list dd a{
+    margin-right: 20px;
+    color: #666;
+    outline: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+.hot-list dt{
+    font-size: 18px;
+}
+.hot-list dd{
+    font-size: 14px;
+}
+
+dl,dd,dt{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+dd{
+    height: 30px;
+}
+dd a:hover{
+    color: #FF9D00;
+}
+/*当地推荐*/
+.Month{
+    width: 100%;
+    height: 700px;
+    margin-top: 30px;
+    float: left;
+}
+/*当地推荐图片*/
+.Month  .pic{
+    margin-top: 10px;
+    margin-left:175px;
+    width: 1000px;
+    height: 600px;
+}
+
+/*上面图片*/
+.pic-top-1{
+    width: 320px;
+    height: 250px;
+}
+.pic-top-img{
+    width: 320px;
+    height: 250px;
+}
+/*下面图片*/
+.pic-bottom1-1{
+    width: 483px;
+    height: 320px;
+}
+.pic-bottom1{
+margin-top: -35px;
+}
+.pic-bottom1-img{
+    width: 483px;
+    height: 320px;
+}
+.pic-top1 div,.pic-bottom1 div{
+    display: inline-block;
+}
+.pic-top-1{
+    position:relative;
+}
+.pic-bottom1-1{
+    position:relative;
+}
+
+ .img-word1{
+    position:absolute;
+    z-index:2;
+    left:10px;
+    top:10px;
+    color: white;
+    font-size: 24px;
+}
+.img-word2{
+    position:absolute;
+    z-index:2;
+    left:10px;
+    top:10px;
+    color: white;
+    font-size: 24px;
+}
+
+.pic-top1 img:hover,.pic-bottom1 img:hover{
+    /*图片向上移动*/
+    transition: 2s;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari */
+    transform: scale(1.1); /* 标准语法 */
+}
+
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>积分商城</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <!--<link rel="stylesheet" href="http://www.yishutang.com/statics/css/yirenyiyu.css">-->
+    <!--<link rel="stylesheet" href="http://www.yishutang.com/statics/css/same.css">-->
+    <!--<link rel="stylesheet" href="http://www.yishutang.com/statics/css/buy.css?2016071401">-->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/shoppingcart.css">
+    <script type="text/javascript" src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="/javascripts/common.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.jqzoom.js"></script>
+    <script type="text/javascript" src="/javascripts/preview.js"></script>
+    <script charset="utf-8" async="" src="/javascripts/i.js" id="_da"></script>
+    <script charset="utf-8" async="" src="/javascripts/change.js" id="_da"></script>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+    <script type="text/javascript">
+        jQuery(function($){
+            var url = 'http://chaxun.1616.net/s.php?type=ip&output=json&callback=?&_='+Math.random();
+            $.getJSON(url, function(data){
+                var ip =data.Ip;
+                $.getJSON("plugins/iplookup.php?act=ipaddr&ip="+ip, function(data){
+                    $(".ipaddr").html(data);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- <页面头部-->
+    <header>
+        <%- include ../util/header-jifen.ejs%>
+    </header>
+    <hr>
+    <!-- 页面主体内容-->
+    <div style="font-size: 14px;margin-left: 140px;margin-bottom: 30px;"><span ><a href="/users/mallshow##" style="color:#06B540;text-decoration: none">积分兑换</a></span> > <span style=""><%=OneGoods[0].GoodName%></span> </div>
+
+    <section style="margin-bottom: 80px">
+
+    <% if(OneGoods.length > 0){ %>
+    <div class="yryy-content">
+        <div class="content-cont">
+            <div class="buy">
+                <div class="buy-contleft">
+                    <div id="preview" class="spec-preview"><span class="jqzoom"><img style="margin-top:50px " jqimg="/upload/<%=OneGoods[0].GoodPic%>" src="/upload/<%=OneGoods[0].GoodPic%>"alt="商品一览" width="390" height="390"></span> </div>
+                    <!--<div class="spec-scroll"> <span class="prev">&lt;</span> <span class="next">&gt;</span>
+                        <div class="items">
+                            <ul>
+                                <li><img alt="商品" bimg="/upload/<%=OneGoods[0].GoodPic%>" src="/upload/<%= OneGoods[0].GoodPic %>" onmousemove="preview(this);" width="55" height="55"></li>
+                                <li><img alt="商品" bimg="/upload/<%=OneGoods[0].GoodPic%>" src="/upload/<%= OneGoods[0].GoodPic %>" onmousemove="preview(this);" width="55" height="55"></li>
+                                <li><img alt="商品" bimg="/upload/<%=OneGoods[0].GoodPic%>" src="/upload/<%= OneGoods[0].GoodPic %>" onmousemove="preview(this);" width="55" height="55"></li>
+                                <li><img alt="商品" bimg="/upload/<%=OneGoods[0].GoodPic%>" src="/upload/<%= OneGoods[0].GoodPic %>" onmousemove="preview(this);" width="55" height="55"></li>
+                                <li><img alt="商品" bimg="/upload/<%=OneGoods[0].GoodPic%>" src="/upload/<%= OneGoods[0].GoodPic %>" onmousemove="preview(this);" width="55" height="55"></li>
+                            </ul>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="buy-contright">
+                    <div class="buy-bt1"><%=OneGoods[0].GoodName%></div>
+                    <br>
+                    <!--<div class="buy-bt2"><%=OneGoods[0].GoodsDescribe%></div>-->
+                    <div class="buy-price">
+                        <!--<p>价格:<span class="yuanjia">￥75.00</span></p>-->
+                        <p>兑换积分：<span class="GoodIntegral"><%=OneGoods[0].GoodIntegral%></span></p>
+                    </div>
+
+                    <div class="buy-yunfei">
+                        <div class="buy-yunfeileft">运费:</div>
+                        <div class="buy-yunfeiright"> <span class="ipaddr">江苏苏州</span><span class="ipaddr_second">快递:包邮</span></div>
+                        <div style=" width:100%; height:1px; clear:both;"></div>
+                    </div>
+                    <div class="buy-shuliang">
+                        <div class="buy_shuliang_count">兑换数量:<input type="number" value="1" name="Count" id="Count"></div>
+                   <!--     <form action="javascript:addToCart(19)" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY">
+                            <div class="pro-buynum-btn">
+                                <script type="text/javascript" src="/javascripts/jquery.spinner.js"></script>
+                                <input type="text" class="spinnerExample"/>
+                                <script type="text/javascript">
+                                    $('.spinnerExample').spinner({});
+                                </script>
+                            </div>
+                        </form>-->
+                        <div style=" width:100%; height:1px; clear:both;"></div>
+                    </div>
+                    <div class="buy-buy">
+                        <div class="buy-buyright">
+                            <input type="button" class="success_change"  id="ChangeButton" value="立刻兑换"/>
+                        </div>
+                    </div>
+
+                    <div class="buy-yunfeileft">兑换承诺 安全、正品、真实、七天</div>
+                </div>
+                <div style=" width:100%; height:1px; clear:both;"></div>
+            </div>
+        </div>
+    </div>
+    <%}%>
+  <!--  <div id="footer" style="margin-top: 30px">
+        <p style="text-align: center">关于我们 | 联系我们 | 问题反馈</p>
+        <p style="text-align: center">Copyright  2000-2016 localhost:63342 版权所有</p>
+    </div>-->
+    </section>
+    <%- include ../util/footer.ejs%>
+
+</body>
+</html>

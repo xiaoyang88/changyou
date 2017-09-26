@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/personal-1.css" type="text/css">
+    <script src="/javascripts/jquery-3.1.0.js"></script>
+<!--    <script>
+        $(function(){
+            //获取要定位元素距离浏览器顶部的距离
+            var navH = $(".section_content_left").offset().top;
+            //滚动条事件
+            $(window).scroll(function(){
+                //获取滚动条的滑动距离
+                var scroH = $(this).scrollTop();
+                //滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定
+                if(scroH>=navH){
+                    $(".section_content_left").css({"position":"fixed","top":60,"left":180});
+                }else if(scroH<navH){
+                    $(".section_content_left").css({"position":"absolute","top":548,"left": 180});
+                }
+            })
+        })
+    </script>-->
+</head>
+<body>
+<%- include ../util/head.ejs%>
+<section>
+    <div >
+        <div class="section_top"></div>
+        <div class="section_navbar">
+            <div class="section_tab">
+                <ul class="section_tab_ul">
+                    <li><a href="#wo" target="_blank" class="selected">我的窝</a></li>
+                    <li><a href="#traveal" target="_blank">我的游记</a></li>
+                    <li><a href="#question" target="_blank">我的问答</a></li>
+                    <li><a href="#select" target="_blank">我的收藏</a></li>
+                    <li><a href="#change" target="_blank">我的兑换</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section_content">
+            <div class="section_content_left">
+                <a href="">
+                    <div><img src="/upload/<%=PersonalResult1[0].userpic%>" style="width: 120px;height: 120px"></div>
+                </a>
+                <div class="imgName"><%=PersonalResult1[0].username%></div>
+                <div class="Select clearfix">
+                    <div class="Select-Nums">
+                        <strong><a href="##" ><%=PersonalcollectResult[0].collectNum%></a></strong>
+                        <p>收藏</p>
+                    </div>
+                    <div class="Select-Nums">
+                        <strong><a href="##" ><%=PersonalNoteNumResult[0].noteNum%></a></strong>
+                        <p>游记</p>
+                    </div>
+                    <div class="Select-Nums last">
+                        <strong><a href="##" ><%=PersonalResult1[0].Integral%></a></strong>
+                        <p>积分</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section_content_right">
+                <a name="wo"><div  class="content_content">
+                        <p><strong>这里是 <%=PersonalResult1[0].username%></strong> 的【窝】！</p>
+                    </div>
+                </a>
+                <a name="traveal">
+                    <div class="traveal">
+                        <h2>我的游记</h2>
+                        <a href="/contentData/writeNote">
+                            <div class="btn_write">
+                                <img src="/images/personal-1/btn_write.png">
+                                <span>写游记</span>
+                            </div>
+                        </a>
+                        <%if(PersonalnoteResult.length>0){%>
+                        <%for(var i=0;i<PersonalnoteResult.length;i++){%>
+                        <div class="write">
+                            <a href="/contentData/noteInfoShow?noteId=<%=PersonalnoteResult[i].TravelNoteId%>">
+                                <span class="writeSpan1"><%=PersonalnoteResult[i].TravelNoteContent%>11111</span></a>
+                            <p class="writeSpan2"><%-PersonalnoteResult[i].TravelNoteTime%>  发布</p>
+                            </br>
+                        </div>
+                        <%}%>
+                        <%}%>
+                    </div>
+                </a>
+                <a name="question">
+                    <div class="traveal">
+                        <h2>我的回答</h2>
+                        <% if(PersonalQuseResult.length>0){%>
+                        <% for(var i=0;i<PersonalQuseResult.length;i++) { %>
+                        <div class="question">
+                            <img src="/upload/<%- PersonalQuseResult[i].QUserpic%> ">
+                            <p class="question_time">
+                            <p class="question_time1"><%- PersonalQuseResult[i].Qusername%>的提问</p>
+                            <p class="question_time2"><%- PersonalQuseResult[i].QuestionTime%></p>
+                            </p>
+                            <span class="span1">问题内容：<%- PersonalQuseResult[i].QuestionContent%></span>
+                            <p  class="question_time3">我：<%- PersonalQuseResult[i].AnswerContent%></p>
+                        </div>
+                        <%}%>
+                        <%}%>
+                    </div>
+                </a>
+                <a name="select"><div class="traveal">
+                        <h2>我的收藏</h2>
+                        <div class="question">
+                            <img src="/images/personal-1/nav_login_pic.gif ">
+                            <span class="span1">凌晨到达关西机场的航班，有没有附近的管接机的民宿可以住？</span>
+                            <p class="question_time"><span>发布者</span><span>2016.10.19</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a name="change"><div class="traveal">
+                        <h2>我的兑换</h2>
+                        <div class="question">
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

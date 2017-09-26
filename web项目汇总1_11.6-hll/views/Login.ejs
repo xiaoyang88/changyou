@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--<link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css'>-->
+    <link rel='stylesheet' href='/stylesheets/Login.css'>
+
+</head>
+<body>
+<div>
+<div class="login_Div"><img src="/images/login_register/login.png" alt=""></div>
+<div id="section">
+    <div id="section-form"></div>
+    <form role="form" action="/users/loginJudge" method="post">
+        <div class="input_div_H">
+            <div class="input_userId_H">账号：</div>
+            <input type="text" class="" id=" userName" name="userName"
+                   placeholder="请输入您的账号" value="">
+        </div>
+        <div class="input_div_H UserPwd">
+            <div class="input_userId_H ">密码：</div>
+            <input type="password" class="" id="UserPwd" name="userPwd"
+                   placeholder="请输入您的密码" value="">
+        </div>
+        <div id="user_warn1"><%= Meg %> </div>
+        <button type="submit" id="submit"  onclick="SelectUserPic()">登录</button>
+    </form>
+    <p class="backIndex">
+        <a href="/users/ForgetPassword">忘记密码？</a> <span>|</span><a href='/'>返回首页 </a>
+    </p>
+</div>
+</div>
+
+</body>
+</html>

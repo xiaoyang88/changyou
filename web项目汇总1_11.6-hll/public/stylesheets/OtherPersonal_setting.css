@@ -1,0 +1,115 @@
+body{
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    font-size: 16px;
+    padding: 0px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+ul li {
+    list-style-type: none;
+}
+section{
+    width: 960px;
+    margin: auto;
+}
+
+.sec_right_Con{
+    width: 650px;
+    margin: 0px 0px 0px 20px ;
+}
+.detail_header{
+    width: 650px;
+    color:#A1A1A1 ;
+}
+table{
+    margin-top:30px;
+}
+.detail_header h2{
+    padding:  25px 0px 0px 0px;
+    color: #444444;
+}
+.td1{
+    text-align: right;
+    padding: 10px 0px 0px 20px;
+    width: 100px;
+}
+.td2{
+    padding-top: 12px;
+    padding-left: 5px;
+}
+input{
+    margin: 10px 0px 0px 0px ;
+    outline: none;
+}
+input[type="text"],input[type="password"]{
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0 none;
+    padding-left: 10px;
+    border: 1px solid #D3D3D3;
+}
+
+#text_input{
+    width: 490px;
+    height: 124px;
+}
+
+
+.UserPic_divH{
+    border: 1px solid #dde0df;
+    background-color: white;
+}
+
+.Pic_divHL{
+    width:70px ;
+    height:70px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0,0,0,.6);
+    display: inline-block;
+    margin: 10px 0px 10px 30px ;
+}
+.Pic_divHL img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.UserName_divH{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -15px;
+    left: 15px;
+}
+.navbarH{
+    height: 52px;
+    border: 1px solid #dde0df;
+}
+.navbarH ul{
+    padding: 0px;
+}
+.navbarH ul li{
+    padding: 15px 40px ;
+    display: inline-block;
+    float: left;
+    font-weight:bold;
+    border-right: 1px solid #dde0df;
+    border-bottom: 1px solid #dde0df;
+}
+.navbarH_li{
+    color: #605951;
+    background-color: #F8F8F8;
+}
+.navbarH_li:hover{
+    background-color: white;
+}
+.active{
+    color: #72AF8B;
+    background-color: white;
+}
+
+

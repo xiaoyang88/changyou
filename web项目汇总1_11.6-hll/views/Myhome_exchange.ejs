@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/Myhome_exchange.css"/>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+
+    </script>
+</head>
+<body>
+<header>
+    <%- include ../util/header-All.ejs %>
+</header>
+<section style="margin: auto">
+   <!-- <div>
+        <img class="banner" src="/images/Myhome_question/myhome_banner.png" alt="">
+    </div>-->
+    <%if(UserInfosData.length>0){%>
+    <div class="UserPic_divH">
+        <div class="Pic_divHL">
+            <img src="/upload/<%= UserInfosData[0].UserPic %>" alt="">
+        </div>
+        <div class="UserName_divH"><span><%= UserInfosData[0].UserName %></span></div>
+    </div>
+    <div class="navbarH">
+        <ul>
+            <a href="/users/myhome_note">
+                <li class="  navbarH_li">我的游记</li>
+            </a>
+            <a href="/users/myhome_question">
+                <li class="active">我的问答</li>
+            </a>
+            <a href="/users/myhome_exchange">
+                <li class="navbarH_li">我的兑换</li>
+            </a>
+            <a href="/users/personal_setting">
+                <li class="navbarH_li">我的资料设置</li>
+            </a>
+        </ul>
+    </div>
+    <div class="travelNote_conH">
+        <!-- <div class="travelAnswerH">
+             <p>我的问答</p>
+         </div>-->
+        <div class="travel_askH">
+            <% if(UserInfosData.length > 0){ %>
+            <% for(var i = 0;i < UserInfosData.length;i++) { %>
+            <div class="wenda_divH">
+                <a href=""><p class="wenda_p">商品名: <%= UserInfosData[i].GoodName %></p></a>
+                <p class="wenda_QcH">姓名:<%= UserInfosData[i].Consignee %></p>
+                <p class="wenda_QcH">地址:<%= UserInfosData[i].ReceiptAddress %></p>
+                <p class="wenda_QcH">邮编:<%= UserInfosData[i].ReceiptTEL %></p>
+                <p class="wenda_time">发表于 <span class="wenda_time2"><%= UserInfosData[i].OrderTime %></span></p>
+                <span class="wenda_delete"><a href="">删除</a></span>
+            </div>
+            <% } %>
+            <% } %>
+        </div>
+    </div>
+    <%}%>
+</section>
+<%- include ../util/footer.ejs%>
+</body>
+</html>

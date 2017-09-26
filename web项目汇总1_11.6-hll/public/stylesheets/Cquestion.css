@@ -1,0 +1,78 @@
+body{
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+
+}
+header{
+    margin-left:200px;
+    margin-top: 20px;
+}
+header a{
+    color: #06B540 ;
+}
+header a:hover{
+    text-decoration: none;
+    color: #06B540
+}
+#QuestionName{
+    margin-top: 15px;
+}
+section{
+    margin-left:200px;
+ width: 960px;
+}
+#section-left{
+    display: inline-block;
+    margin-top:70px;
+   /* float: left;*/
+}
+#section-form{
+width: 650px;
+}
+#section-img{
+    margin-left: -5px;
+}
+.control-label{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#section-detailed p{
+    position: relative;
+    left: 35px;
+    top: -30px;
+    font-size: 20px;
+}
+#form-group{
+    width: 660px;
+}
+#section-form1{
+    background-color:#06B540 ;
+    width: 660px;
+    height: 50px;
+}
+.btn{
+    margin-top: 20px;
+    background-color: #06B540;
+    color: white;
+    float: right;
+}
+#btns input{
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#section-right{
+    width: 200px;
+    height: 500px;
+   /* float: right;*/
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+    top: -250px;
+}
+#right-header{
+    font-size: 20px;
+}
+.right-content{
+    margin-top: 20px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/write_note.css">
+    <link type="text/css" rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet"
+          href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+<body>
+<%- include ../util/header-Note.ejs %>
+<section style="margin: auto">
+    <div class="note_hd">
+        <p>发表新话题/文章</p>
+    </div>
+    <div style="margin-top: 20px">
+        <form method='post' action='javascript:;' role="form" id="frmUploadFile">
+            <div>
+                <span class=" title_lable">标题：</span>
+                <input type="text" placeholder="请在这里输入游记标题" name="Tname" id="NoteTitle"/>
+            </div>
+            <div class="file_div">
+                <span class="title_lable2">游记图片：</span>
+                <input type="file" name="files" id="myFile" multiple/>
+                <span id="br_label">图片限于bmp,png,gif,jpeg,jpg格式,且大小不超过1M</span>
+            </div>
+            <div id="editor" type="text/plain" style="width:660px;height:300px;" ></div>
+            <div>
+                <div style="margin-top: 30px;margin-bottom: 50px">
+                    <button  onClick="uploadFile()"><span>发表游记</span></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<%- include ../util/footer.ejs%>
+</body>
+</html>
+
+<script src="/javascripts/uedtior.js"></script>
+<script src="/javascripts/userMultiplePic.js"></script>
+<script src="/javascripts/jquery-3.1.0.js"></script>

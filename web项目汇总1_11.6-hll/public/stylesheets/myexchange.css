@@ -1,0 +1,162 @@
+body{
+
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    font-size: 16px;
+    margin: auto;
+    padding: 0px;
+    background-color:  white;
+}
+/* 头部信息 */
+#header{
+    width: 960px;
+
+    /*   background-color: #d4d4d4;*/
+    margin: auto;
+}
+
+.none{
+    display: none;
+}
+#AdressContent input{
+    width: 450px;
+}
+
+
+
+
+
+
+
+/*整体*/
+#form-c{
+    width: 960px;
+    border-color:#000000 ;
+    margin: auto;
+    margin-top: 60px;
+}
+
+/*购物车*/
+
+#pic-1{
+
+    font-size: 20px;
+    color: #06B540;
+    font-weight: bolder;
+    margin-top: -20px;
+
+}
+
+#checkbox1{
+    width: 300px;
+    height: 30px;
+    margin-top: 12px;
+    margin-left: 140px;
+    background-color: #06B540;
+    font-size: 20px;
+    color: white;
+    text-align: right;
+    float: left;
+}
+
+#con{
+    height: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.con1{
+
+    line-height: 40px;
+    float: left;
+    margin-left: 50px;
+
+}
+.con2{
+    line-height: 40px;
+    float: left;
+    margin-left: 230px;
+
+}
+.con4{
+    line-height: 40px;
+    float: left;
+    margin-left: 150px;
+
+}
+#goods-con{
+    width: 960px;
+    height: 160px;
+    border: 1px solid gainsboro;
+    margin-top: 30px;
+}
+.goods-con1{
+    width: 360px;
+    height: 120px;
+    margin:20px;
+    float: left;
+}
+.goods-con1-1{
+    width: 20px;
+    height: 120px;
+    float: left;
+}
+.goods-con1-2{
+    width: 160px;
+    height: 120px;
+    float: left;
+    margin-left: -30px;
+}
+.goods-con2-3{
+    width: 160px;
+    height: 120px;
+    margin-top: 50px;
+    float:right;
+    font-size: 12px;
+}
+.goods-con2{
+    margin-top: 60px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    margin-left: -90px;
+}
+.goods-con3{
+    margin-left:165px;
+    margin-top: 60px;
+    float: left;
+    text-align: center;
+}
+.goods-con4{
+    margin-left:150px;
+    margin-top: 60px;
+    float: left;
+    text-align: center;
+}
+
+.get_address span{
+    color: #06B540;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: -400px;
+    margin-top: 30px;
+
+}
+.good_address{
+    margin-top: 20px;
+    width: 960px;
+    margin-left:200px;
+    line-height: 30px;
+
+}
+.success_btn{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #06B540;
+    border:0px;
+    color: white;
+    float: right;
+    margin:30px 200px 50px 0;
+
+
+}

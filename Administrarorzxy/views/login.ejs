@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>『自由行』后台管理</title>
+
+    <link rel="stylesheet" href="/stylesheets/admin_login.css">
+    <script  src="/javascripts/libs/modernizr.min.js"></script>
+</head>
+<body>
+<div class="admin_login_wrap">
+    <h1>自由行管理员登录</h1>
+    <div class="adming_login_border">
+        <div class="admin_input">
+            <form action="/users/LoginJudge" method="post">
+                <div style="color: red">
+                    <%= Meg %>
+                </div>
+                <ul class="admin_items">
+                    <li>
+                        <label for="user" style="color: black">用户名：</label>
+                        <input type="text" name="adminname" value="2001" id="user" size="35" class="admin_input_style" />
+                    </li>
+                    <li>
+                        <label for="pwd"  style="color: black">密码：</label>
+                        <input type="password" name="adminpwd" value="1222" id="pwd" size="35" class="admin_input_style" />
+                    </li>
+                    <li>
+                        <input type="submit" tabindex="3" value="提交" class="btn btn-primary" />
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

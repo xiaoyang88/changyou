@@ -1,0 +1,97 @@
+body {
+    padding: 50px;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    text-align: center;
+    background: url("../images/login_register/login_regi_bg.jpg") no-repeat;
+
+}
+.login_Div img {
+    width:150px;
+    height: 53px;
+    margin-top:70px;
+}
+
+a:hover {
+    color: #40C895;
+}
+.backIndex {
+    float: right;
+    margin-top: 25px;
+    margin-right: 45px;
+}
+.backIndex a, .backIndex span {
+    color:  #06B540;
+
+}
+.backIndex span {
+    padding: 0px 8px 0px 0px;
+}
+
+#section {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.9), 0px 0px 20px rgba(75, 75, 75, 1);
+    width: 370px;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.input_div_H {
+    border: 1px solid #06B540;
+    width: 280px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 40px;
+    border-radius: 5px;
+}
+
+.input_userId_H {
+    width: 50px;
+    float: left;
+    padding-left: 15px;
+}
+
+.input_div_H input {
+    height: 30px;
+    width: 200px;
+    font-size: 14px;
+    border: 1px solid #FFF;
+}
+
+input {
+    outline: none;
+}
+
+.UserPwd {
+    margin-top: 30px;
+}
+
+#submit {
+    width: 280px;
+    height: 40px;
+    margin: 20px 0px 0px 0px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #06B540;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+#submit:hover{
+    background-color:#40C895;
+}
+#section-form {
+    width: 370px;
+    height: 40px;
+}
+
+#user_warn1 {
+    height: 25px;
+    color: red;
+    padding: 5px 0px 0px 48px;
+}
+

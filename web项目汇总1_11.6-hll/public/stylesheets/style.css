@@ -1,0 +1,201 @@
+body{
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    font-size: 16px;
+    margin: auto;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+ul li {
+    list-style-type: none;
+}
+nav{
+    height: 58px;
+}
+#nav_container{
+    margin: auto;
+    height: 58px;
+    width: 1000px;
+
+}
+#nav_logo{
+    float: left;
+    background-color: greenyellow;
+    height: 58px;
+    width: 190px;
+    text-align: center;
+}
+/*导航栏中间菜单*/
+#nav_menu{
+    float: left;
+    height: 58px;
+}
+#nav_menu ul{
+    float: left;
+    margin: 0px;
+    padding-left: 0px;
+}
+#nav_menu ul li {
+    float: left;
+    height: 54px;
+    width: 90px;
+    line-height:55px;
+    text-align: center;
+}
+#nav_menu ul li a{
+    padding: 20px 10px 20px 10px;
+}
+.nav_on{
+    border-bottom: 4px solid;
+    border-bottom-color:  #FF9D00;
+}
+.nav_on a{
+    color: #FF9D00;
+}
+.nav_out{
+    background-color: white;
+}
+.nav_out a{
+    color: black;
+}
+/*导航栏右边图标 微博、qq、微信，登录注册*/
+#nav_login{
+    float: right;
+    height: 58px;
+}
+#weibo_login,#qq_login,#weixin_login{
+    display: inline-block;
+    margin:18px 6px 0px 0px;
+    width: 30px;
+    height: 30px;
+    background:url("../image/header-sprites.png");
+    cursor: pointer;
+}
+#weibo_login{
+    background-position: 0 -50px;
+}
+#qq_login{
+    background-position: 170px -50px;
+}
+#weixin_login{
+    background-position: 0px -164px;
+}
+
+#login_in{
+     float: right;
+     margin: 22px 5px 0 0;
+     text-align: center;
+     color:#C9C9C9 ;
+ }
+#login_in a{
+    font-size: 14px;
+    color: #FF9D00 ;
+}
+
+#login_in a:hover{
+    text-decoration: underline;
+    color: #FF9D00  ;
+}
+#weibo_login:hover{
+    background:url("../image/header-sprites.png");
+    background-position: 0 -80px;
+}
+#qq_login:hover{
+    background:url("../image/header-sprites.png");
+    background-position: 170px -80px;
+}
+#weixin_login:hover{
+    background:url("../image/header-sprites.png");
+    background-position: 170px -164px;
+}
+
+#section{
+    width: 1349px ;
+    height: 450px;
+    background-image:url("../image/header_2.jpeg");
+}
+/*中部搜索栏*/
+#search_container{
+  /*  clear: both;*/
+    position: relative;
+    top: 320px;
+    margin: auto;
+    height: 89px;
+    width: 538px;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 4px;
+}
+#searchtab{
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    margin: 12px 0px 0px 20px;
+    background: url("../image/header-sprites.png") no-repeat;
+    background-position: -57px -137px;
+    border-radius: 10px;
+
+}
+#search_container span{
+    font-size: 15px;
+    color: white;
+}
+#search_bar{
+    display: inline-block;
+    width: 500px;
+    height: 40px;
+    margin-left: 20px ;
+}
+#search_bar input{
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    width: 414px;
+    height: 36px;
+    padding: 0 10px 0 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 0 none;
+}
+
+#search_ico{
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-image:url("../image/header-sprites.png");
+    background-position: 170px -133px;
+    border-radius: 5px;
+}
+#search_ico a{
+    width: 40px;
+    height: 36px;
+}
+
+#show_image ul{
+    margin: -60px 0 0 1200px;
+    padding: 0px;
+    width: 110px;
+    height: 340px;
+
+}
+#show_image ul li{
+    width: 110px;
+    height: 62px;
+    margin-bottom: 10px;
+}
+#show_image img{
+    width: 110px;
+    height: 62px;
+}
+#show_image_li1,#show_image_li2,#show_image_li3,#show_image_li4,#show_image_li5{
+    border: 2px solid #FF9D00;
+}
+#show_image_link {
+    width:110px ;
+    height:35px ;
+    background: url("../image/lilizaimu.png") no-repeat;
+    background-position: -60px -50px;
+}
+#show_image_link {
+    margin: 40px 0 0 1200px;
+}

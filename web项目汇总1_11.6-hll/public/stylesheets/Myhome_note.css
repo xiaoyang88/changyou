@@ -1,0 +1,156 @@
+*{
+    font-family:微软雅黑;
+    padding: 0px ;
+    margin: 0px;
+}
+ul li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.MyhomeNoteH{
+    width: 960px;
+    margin: auto;
+}
+.banner{
+    width: 960px;
+    height: 470px;
+}
+.UserPic_divH{
+    height:90px;
+    margin-top: -4px;
+    border: 1px solid #dde0df;
+}
+.Pic_divHL{
+    width:120px ;
+    height:120px;
+    border-radius: 50%;
+    margin: -35px 0px 0px 50px;
+    box-shadow: 0 0 3px rgba(0,0,0,.6);
+    display: inline-block;
+}
+.Pic_divHL img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.UserName_divH{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -25px;
+    margin: 0px 0px 0px 20px;
+}
+.navbarH{
+    height: 51px;
+    border: 1px solid #dde0df;
+
+}
+.navbarH ul li{
+    padding: 15px 40px ;
+    float: left;
+    font-weight:bold;
+    border-right: 1px solid #dde0df;
+    border-bottom: 1px solid #dde0df;
+}
+.navbarH_li{
+    color: #605951;
+    background-color: #F8F8F8;
+}
+.navbarH_li:hover{
+    background-color: white;
+}
+.active{
+    color: #72AF8B;
+    background-color: white;
+}
+.travelNote_conH{
+    width: 960px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.travelContentH{
+    display: inline-block;
+    margin:20px 0px 0px 0px
+}
+.bar_H{
+    width: 960px;
+    border-bottom: 2px solid #DDDDDD;
+    background-color: red;
+}
+.bar_H p{
+    font-size: 18px;
+    padding: 18px 0px 15px 0px;
+}
+.youji_divH{
+    width: 800px;
+    height: 220px;
+    margin-top: 20px;
+    border: 1px solid #DDDDDD;
+    background-color: white;
+}
+.youji_divH:hover{
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+}
+.youji_divH_left{
+    float: left;
+    height: 218px;
+}
+.youji_divH_left img{
+    width: 280px;
+    height: 220px;
+}
+.youji_divH_right{
+    float: left;
+    width: 500px;
+    height: 220px;
+    background-color: white;
+}
+.youji_divH_right p:nth-child(1){
+    font-weight: bold;
+    color: #605951;
+    padding: 25px 20px 15px  20px ;
+    background-color: white;
+}
+.youji_divH_right p:nth-child(1):hover{
+    color:  #72AF8B;
+}
+.youji_divH_right p:nth-child(2){
+    padding: 0px 10px 0px  20px;
+    font-size: 14px;
+    line-height: 25px;
+    background-color: white;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:4;
+    overflow: hidden;
+}
+.youji_divH_right p:nth-child(3){
+    color: #959595;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: white;
+}
+.youji_time{
+    padding-left: 10px ;
+    background-color: white;
+    color: #959595;
+}
+.youji_delete{
+    float: right;
+    margin: -15px 20px 0px 0px ;
+    font-size: 14px;
+    color:  #72AF8B;
+    background-color: white;
+    cursor: pointer;
+}
+.youji_delete a{
+    color:  #72AF8B;
+    background-color: white;
+}

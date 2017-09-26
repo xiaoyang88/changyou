@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/personal_index1.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/main.css"/>
+    <script src="/javascripts/jquery-3.1.0.js"></script>
+    <script src="/javascripts/personal_index1.js"></script>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+<body>
+<%- include ../util/header-All_Other.ejs %>
+<section>
+    <div>
+        <div class="section_top"
+             style="background:url('/upload/<%- noteInfoShow[0].Notepic[0] %>')no-repeat;background-size:100% 100% "></div>
+        <div class="section_navbar">
+            <!--头像-->
+            <div class="person"><img src="/upload/<%- noteInfoShow[0].UserPic %>" alt=""></div>
+            <div class="person_name">
+                <p><%- noteInfoShow[0].UserName %>
+                    <span>发表于 <%- noteInfoShow[0].TravelNoteTime %></span>
+                </p>
+            </div>
+            <!--收藏，分享-->
+            <div class="share" id="Praise_x">
+                <div class="share_icon" id="share_icon"></div>
+                <span>点赞</span>
+            </div>
+            <div class="collect" id="collect_X">
+                <div class="collect_icon" id="collect_icon"></div>
+                <span>收藏</span>
+            </div>
+        </div>
+        <% if(noteInfoShow.length > 0){ %>
+        <% for(var i = 0;i < noteInfoShow.length;i++) { %>
+
+        <div class="section_content">
+            <div class="section_top_title">
+                <h1><%- noteInfoShow[0].Tname %></h1>
+            </div>
+            <div class="section_content_left">
+                <%- noteInfoShow[i].TrvaelContnet %>
+            </div>
+            <% } %>
+            <% } %>
+            <div class="section_bottom">
+                <div class="section_comment">评论</div>
+                <div class="comment_content">
+                    <section>
+                        <form role="form" action="javascript:;" method="post" id="myForm">
+                            <input type="text" name="com" id="com" required="required" placeholder="请在这里回复帖子">
+                            <br>
+                            <input type="button" value="评论" id="btn" onclick="sub()">
+                        </form>
+                        <div id="content">
+                            <% if(showINfo.length > 0){ %>
+                            <div style="width:660px;">
+                                <% for(var i = 0;i < showINfo.length;i++) { %>
+                                <div id="d1">
+                                    <div class="d1_Pic">
+                                        <a href=""><img src="/upload/<%= showINfo[i].UserPic %>" alt=""></a>
+                                    </div>
+                                    <span class="d1_span0"><%= showINfo[i].UserName %></span>
+                                    <span class="d1_span1">发表于<span><%- showINfo[i].CommentTime %></span></span>
+
+                                </div>
+                                <div id="d2"><%- showINfo[i].Comment_Contnet %></div>
+                                <% } %>
+                                <% } %>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include ../util/footer.ejs%>
+</body>
+</html>

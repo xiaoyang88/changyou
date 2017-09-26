@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/Myhome_none_question.css"/>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+<body>
+<header>
+    <%- include ../util/header-All.ejs %>
+
+</header>
+<section class="Myhome_none_question">
+
+    <div class="UserPic_divH">
+        <div class="Pic_divHL">
+            <img src="/upload/<%= MyData[0].UserPic %>" alt="">
+        </div>
+        <div class="UserName_divH"><span><%= MyData[0].UserName %></span></div>
+    </div>
+    <div class="navbarH">
+        <ul>
+            <a href="/users/myhome_note">
+                <li class="  navbarH_li">我的游记</li>
+            </a>
+            <a href="/users/myhome_question">
+                <li class="active">我的问答</li>
+            </a>
+            <a href="/users/myhome_exchange">
+                <li class="navbarH_li">我的兑换</li>
+            </a>
+            <a href="/users/personal_setting">
+                <li class="navbarH_li">我的资料设置</li>
+            </a>
+        </ul>
+    </div>
+    <div class="travelNote_conH">
+        <div class="travelContentH">
+            <div class="bar_H">
+                <p>我的问答</p>
+            </div>
+        </div>
+        <div class="travel_none_askH">
+            <img src="/images/Myhome_question/ask_none_icon.png">
+            <span>有问题？别害羞！</span>
+        </div>
+        <a href="/users/CQuestion">
+            <div class="writeAskH">
+                <img src="/images/Myhome_question/icon_writeDiaryWhite.png" alt="">
+                <span>去提问</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+</body>
+</html>

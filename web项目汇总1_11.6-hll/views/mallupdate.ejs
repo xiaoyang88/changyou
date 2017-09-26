@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品上传</title>
+<link rel="stylesheet" href="/stylesheets/mallupdate.css">
+<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"> </script>
+</head>
+<body>
+<%- include ../util/head.ejs%>
+<section>
+    <div class="page-header">
+        <h2>商品上传</h2>
+    </div>
+    <div id="section-left">
+        <form method="post" action='javascript:;' role="form" id="frmUploadFile" class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2">商品名：</label>
+                <div class="col-sm-6">
+                    <input type="text"  name="GoodName" id="GoodName" value="相机" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">积分数：</label>
+                <div class="col-sm-6">
+                    <input type="number" name="GoodIntegral" id="GoodIntegral" value="3000" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">数量：</label>
+                <div class="col-sm-6">
+                    <input type="number" name="Quantity" id="Quantity" value="1" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">商品图片：</label>
+                <div class="col-sm-6">
+                    <input type="file" name="files" id="myFile" class="form-control"/>
+                </div><br/>
+            </div>
+            <label for="control-label" class="mata">图片限于bmp,png,gif,jpeg,jpg格式,且大小不超过1M</label>
+            <label for="control-label" id="fileSize"></label>
+            <div id="section-detailed">
+                <img src="/images/CQuestion/1.png" id="section-img" onmouseout=" UE.getEditor('editor').setShow()"onmouseover=" UE.getEditor('editor').setHide()">商品详细内容
+            </div>
+            <div>
+                <div id="editor" type="text/plain"  class="amd" style="width:660px;height:100px;"></div>
+            </div>
+            <div id="btns">
+                <input type="submit" class="btn btn-warning " onClick="uploadFile()"  value="上传">
+                <span class="help-inline" id="spanMessage"></span>
+            </div>
+        </form>
+    </div>
+</section>
+<div id="insert"></div>
+<script src="/javascripts/GoodPic.js"></script>
+<script src="/javascripts/uedtior.js"></script>
+<script src="/javascripts/jquery-3.1.0.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

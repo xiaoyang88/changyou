@@ -1,0 +1,244 @@
+body{
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    font-size: 16px;
+    margin: auto;
+    padding: 0px;
+    background-color: 	#F8F8F8;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+ul li {
+    list-style-type: none;
+}
+nav{
+    background-color: white;
+    height: 58px;
+    width: 1349px;
+}
+#nav_container{
+    margin-left: 175px;
+    height: 58px;
+    width: 1000px;
+
+}
+#nav_logo{
+    float: left;
+    height: 58px;
+    width: 190px;
+    text-align: center;
+}
+#nav_logo img{
+    width: 160px;
+    height: 50px;
+    margin: 5px 0px 0px 10px;
+    margin-top: 5px;
+}
+/*导航栏中间菜单*/
+#nav_menu{
+    float: left;
+    height: 58px;
+}
+#nav_menu ul{
+    float: left;
+    margin: 0px;
+    padding-left: 0px;
+}
+#nav_menu ul li {
+    float: left;
+    height: 54px;
+    width: 90px;
+    line-height:55px;
+    text-align: center;
+}
+#nav_menu ul li a{
+    padding: 20px 10px 20px 10px;
+}
+.nav_on2{
+    background-color:#FF9D00 ;
+    border-bottom: 4px solid;
+    border-bottom-color:  #FF9D00;
+}
+.nav_on2 a{
+    color: white;
+}
+.nav_on{
+    border-bottom: 4px solid;
+    border-bottom-color:  #FF9D00;
+}
+
+/*登录前*/
+#nav_logo{
+    float: left;
+    height: 58px;
+    width: 190px;
+    text-align: center;
+}
+/*导航栏中间菜单*/
+#nav_menu{
+    float: left;
+    height: 58px;
+}
+#nav_menu ul{
+    float: left;
+    margin: 0px;
+    padding-left: 0px;
+}
+#nav_menu ul li {
+    float: left;
+    height: 54px;
+    width: 90px;
+    line-height:55px;
+    text-align: center;
+}
+#nav_menu ul li a{
+    padding: 20px 10px 20px 10px;
+    /*     color: black;*/
+}
+/*导航高亮样式*/
+.nav_on2{
+    width: 180px;
+    background-color:#FF9D00 ;
+    border-bottom: 2px solid #FF9D00;
+    color:white ;
+}
+
+/*登录注册前*/
+#nav_login1{
+    float: right;
+    height: 58px;
+}
+#weibo_login,#qq_login,#weixin_login{
+    display: inline-block;
+    margin:16px 6px 0px 0px;
+    width: 30px;
+    height: 30px;
+    background:url("../images/index/header-sprites.png");
+    cursor: pointer;
+}
+#weibo_login{
+    background-position: 0 -50px;
+}
+#qq_login{
+    background-position: 170px -50px;
+}
+#weixin_login{
+    background-position: 0px -164px;
+}
+#login_in{
+    float: right;
+    margin: 22px 5px 0 0;
+    text-align: center;
+}
+#login_in a{
+    font-size: 14px;
+    color: #FF9D00 ;
+}
+#login_in a:hover{
+    text-decoration: underline;
+    color: #FF9D00  ;
+}
+#weibo_login:hover{
+    background:url("/images/index/header-sprites.png");
+    background-position: 0 -80px;
+}
+#qq_login:hover{
+    background:url("/images/index/header-sprites.png");
+    background-position: 170px -80px;
+}
+#weixin_login:hover{
+    background:url("/images/index/header-sprites.png");
+    background-position: 170px -164px;
+}
+
+/*导航栏右边图标 微博、qq、微信，登录注册 登录后*/
+#nav_login2{
+    float: right;
+    height: 58px;
+    position: relative;
+    z-index: 100;
+}
+.nav_login_pic{
+
+    height: 32px;
+    width: 32px;
+    margin: 15px 15px 0px 0px;
+    border: 2px solid  white;
+    border-radius: 50%;
+}
+#userpic img{
+    height: 32px;
+    width: 32px;
+    /*background: url("/images/index_login_nav/nav_login_pic.gif");*/
+    border-radius: 50%;
+}
+.icon_tri{
+    /* float: right;
+     margin-top: -20px;*/
+    margin: -20px 0px 0px 40px;
+    width: 13px;
+    height: 10px;
+    background: url("/images/index_login_nav/tri1.png");
+    cursor: pointer;
+}
+#nav_login2:hover  .icon_tri{
+    background: url("/images/index_login_nav/tri2.png")no-repeat;
+}
+#nav_login2:hover .nav_login_pic{
+    border: 2px solid  #FF9D00;
+    border-radius: 50%;
+}
+.nav_dropdown{
+    width: 210px;
+    margin: 0px 0px 0px -200px;
+    display: none;
+
+}
+.nav_dropdown li:nth-child(1){
+    height: 30px;
+    padding: 15px 20px 5px 20px ;
+}
+.dropdown{
+    height: 30px;
+    padding: 10px 20px 0px 20px ;
+}
+.nav_dropdown1{
+    background-color:#FF9D00 ;
+}
+.nav_dropdown1 a{
+    color: white;
+}
+.nav_dropdown2,.nav_dropdown3,.nav_dropdown4,.nav_dropdown5,.nav_dropdown6{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 3px 12px 0px 0px ;
+    background:url("/images/index_login_nav/header-sprites.png");
+}
+.nav_dropdown2{
+    background-position:-120px -50px;
+}
+.nav_dropdown3{
+    background-position:-180px -50px;
+}
+.nav_dropdown4{
+    background-position:-120px -80px;
+}
+.nav_dropdown5{
+    background-position:-90px -110px;
+}
+.nav_dropdown6{
+    background-position:-120px -110px;
+}
+
+.dropdown{
+    background-color: white;
+}
+.dropdown:hover{
+    background-color:#DEDEDE;
+}
+#nav_login2:hover .nav_dropdown{
+    display: block;
+}
+

@@ -1,0 +1,196 @@
+body{
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+
+}
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+ul li {
+    list-style-type: none;
+}
+nav{
+
+    height: 52px;
+    width: 1367px;
+    background-color: #2C2D2E;
+}
+#nav_container{
+    margin: auto;
+    height: 50px;
+    width: 1000px;
+
+}
+#nav_container ul li a:hover{
+    background-color: black;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#nav_logo{
+    float: left;
+    background-color: greenyellow;
+    height: 50px;
+    width: 190px;
+    text-align: center;
+}
+/*导航栏中间菜单*/
+#nav_menu{
+    float: left;
+    height: 50px;
+}
+#nav_menu ul{
+    float: left;
+    margin: 0px;
+    padding-left: 0px;
+}
+#nav_menu ul li {
+    float: left;
+    height: 45px;
+    width: 90px;
+    line-height:48px;
+    text-align: center;
+}
+#nav_menu ul li a{
+    padding: 22px 10px 20px 10px;
+}
+
+
+#nav_on a{
+    color: white;
+}
+/*导航栏右边图标 微博、qq、微信，登录注册*/
+#nav_login1{
+    float: right;
+    height: 50px;
+}
+#weibo_login,#qq_login,#weixin_login{
+    display: inline-block;
+    margin:14px 6px 0px 0px;
+    width: 30px;
+    height: 30px;
+    background:url("/images/header-sprites.png");
+    cursor: pointer;
+}
+#weibo_login{
+    background-position: 0 -50px;
+}
+#qq_login{
+    background-position: 170px -50px;
+}
+#weixin_login{
+    background-position: 0px -164px;
+}
+
+#login_in{
+    float: right;
+    margin: 22px 5px 0 0;
+    text-align: center;
+    color:#C9C9C9 ;
+}
+#login_in a{
+    font-size: 14px;
+    color: #FF9D00 ;
+}
+
+#login_in a:hover{
+    text-decoration: none;
+    color: #FF9D00  ;
+}
+#weibo_login:hover{
+    background:url("/images/header-sprites.png");
+    background-position: 0 -80px;
+}
+#qq_login:hover{
+    background:url("/images/header-sprites.png");
+    background-position: 170px -80px;
+}
+#weixin_login:hover{
+    background:url("/images/header-sprites.png");
+    background-position: 170px -164px;
+}
+
+/*登录后*/
+#nav_login2{
+    float: right;
+    height: 58px;
+}
+.nav_login_pic{
+    height: 32px;
+    width: 32px;
+    margin: 10px 15px 0px 0px;
+    background: url("/images/personal/nav_login_pic.gif");
+    border: 2px solid  black;
+    border-radius: 50%;
+}
+.icon_tri{
+    /* float: right;
+     margin-top: -20px;*/
+    margin: -22px 0px 0px 37px;
+    width: 13px;
+    height: 10px;
+    background: url("/images/personal/tri.png");
+    cursor: pointer;
+}
+#nav_login2:hover .nav_login_pic{
+    border: 2px solid  #FF9D00;
+    border-radius: 50%;
+}
+.nav_login_pic a{
+    color: #666666 ;
+}
+.nav_login_pic a:hover{
+    text-decoration: none;
+}
+.nav_ul {
+    display: none;
+}
+.nav_login_pic ul{
+    width: 220px;
+    position:relative;
+    top:40px;
+    right: 160px;
+    z-index: 100;
+    padding: 0px 0px 0px 0px;
+    background-color: white;
+}
+.nav_lii{
+    height: 50px;
+    padding: 15px 0px 0px 32px;
+    background-color:  #FF9D00 ;
+}
+.nav_lii a{
+    color: white;
+}
+ .nav_lii1{
+    height: 45px;
+    padding:14px 15px 0px 35px;
+}
+.nav_lii1:hover{
+    background-color:#EEEEEE ;
+}
+.nav_span1,.nav_span2,.nav_span3,.nav_span4,.nav_span5{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 4px 12px 0px 0px ;
+    background:url("/images/personal/header-sprites.png");
+}
+.nav_span1{
+    background-position:-120px -50px;
+}
+
+.nav_span2{
+    background-position:-180px -50px;
+}
+.nav_span3{
+    background-position:-120px -80px;
+}
+.nav_span4{
+    background-position:-90px -110px;
+}
+.nav_span5{
+    background-position:-120px -110px;
+}
+#nav_login2:hover .nav_ul{
+    display: block;
+}

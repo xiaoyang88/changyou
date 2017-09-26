@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>畅游</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/stylesheets/index-H/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" href="/stylesheets/index-H/responsiveslides.css">
+    <script src="/javascripts/index-H/jquery.min.js"></script>
+    <script src="/javascripts/index-H/responsiveslides.min.js"></script>
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 1
+            $("#slider1").responsiveSlides({
+                maxwidth: 2500,
+                speed: 600
+            });
+        });
+    </script>
+    <style>
+        .MyHomeNote_NameH span{
+            position:relative;
+            top:-13px;
+            padding: 0px 0px 0px 7px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div class="header" id="login" style="display: block;height:52px">
+    <div class="wrap" style="width: 1150px" >
+        <div class="logo" style="padding: 0px 0px 0px 30px">
+            <a href="/"><img src="/images/index-H/logo3.png" title="logo"/></a>
+        </div>
+        <div class="top-nav">
+            <ul >
+                <li><a style="padding:18px 25px;" href="/">首页</a></li>
+                <li><a style="padding: 18px 25px;" href="/contentData/noteIndex?page=1">游记</a></li>
+                <li><a style="padding: 18px 25px;" href="/users/strategy">攻略</a></li>
+                <li><a style="padding: 18px 25px;" href="/users/community">社区</a></li>
+                <li class="li li_my">
+                    <a style="padding:6px 25px;" href="/users/myhome_note" id="name" class="MyHomeNote_NameH">
+                        <!--<img style="margin-top:2px"  src="/images/f-2.jpeg" alt="">
+                        <span>欢迎您 Control_HLL</span>-->
+                    </a>
+                </li>
+                <li class="li"><a style="padding: 18px 25px;" href="/users/logout">退出</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--<nav  class="header navbar navbar-default " id="unlogin" style="display: none">
+    <div class="wrap container">
+        <div class=" logo navbar-header">
+            <a href="/" class="navbar-brand" style="margin: 0px;padding: 0px "><img src="/images/index-H/logo2.png" title="logo"/></a>
+            <button type="button" class="navbar-toggle toggle_btn_un" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class=" top-nav collapse navbar-collapse" id="navbar-collapse" >
+            <ul class="nav navbar-nav navbar-right unlogin_ul" style="margin-top: 0px">
+                <li class="li index_on" ><a href="/">首页</a></li>
+                <li class="active"><a href="/contentData/noteIndex">游记</a></li>
+                <li class="li"><a href="/users/strategy">攻略</a></li>
+                <li class="li"><a href="/users/community">社区</a></li>
+                <li class="li"><a href="/users/login">登录</a></li>
+                <li class="li"><a href="/users/res">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav  class="header navbar navbar-default " id="login" style="display: none;height:76px;padding: 0px">
+    <div class="wrap container" >
+        <div class=" logo2 navbar-header">
+            <a href="/" class="navbar-brand" style="margin: 0px;padding: 0px "><img src="/images/index-H/logo3.png" title="logo"/></a>
+        </div>
+        <div class=" nav_BH collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right MyNavH" id="" style="margin-top: 0px">
+                <li class="li li_firstH"><a href="/">首页</a></li>
+                <li class="active"><a href="/contentData/noteIndex">游记</a></li>
+                <li class="li"><a href="/users/strategy">攻略</a></li>
+                <li class="li"><a href="/users/community">社区</a></li>
+
+                <li class="li li_my">
+                    <a href="/users/myhome_note">
+                        <img  src="/images/f-2.jpeg" alt="">
+                        <span>欢迎您 Control_HLL</span>
+                    </a>
+                </li>
+                <li class="li"><a href="/users/logout">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>-->
+<!--<div class="header" id="unlogin" style="display: none">
+    <div class="wrap">
+        <div class="logo" >
+            <a href="/"><img src="/images/index-H/logo2.png" title="logo"/></a>
+        </div>
+        <div class="top-nav">
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li ><a href="/contentData/noteIndex">游记</a></li>
+                <li><a href="/users/strategy">攻略</a></li>
+                <li><a href="/users/community">社区</a></li>
+                <li class="li li_my"><a  href="/users/login">登录</a></li>
+                <li class="li"><a href="/users/logout">注册</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>-->
+
+
+</body>
+</html>

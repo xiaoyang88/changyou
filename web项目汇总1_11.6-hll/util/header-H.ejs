@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>畅游</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/stylesheets/index-H/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" href="/stylesheets/index-H/responsiveslides.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/javascripts/index-H/responsiveslides.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.get('/users/Session',function (data,status) {
+                console.log('数据：'+data +"status"+status);
+                if(data==0){
+                    $("#unlogin").show();
+                }
+                else{
+                    $("#login").show();
+                }
+            })
+        })
+    </script>
+    <style>
+        .Commnity_nameH img{
+            /*position:relative;
+            top: 7px;*/
+            display: inline-block;
+            margin-top: 8px;
+        }
+        .Index_NameH span{
+            position:relative;
+            top:-13px;
+            padding: 0px 0px 0px 7px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<nav  class="header navbar navbar-default " id="unlogin" style="display: none">
+    <div class="wrap container">
+        <div class=" logo navbar-header">
+            <a href="/" class="navbar-brand" style="margin: 0px;padding: 0px "><img src="/images/index-H/logo2.png" title="logo"/></a>
+            <button type="button" class="navbar-toggle toggle_btn_un" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class=" top-nav collapse navbar-collapse" id="navbar-collapse" >
+            <ul class="nav navbar-nav navbar-right unlogin_ul" style="margin-top: 0px">
+                <li class="active index_on" ><a href="/">首页</a></li>
+                <li class="li"><a href="/contentData/noteIndex?page=1">游记</a></li>
+                <li class="li"><a href="/users/strategy">攻略</a></li>
+                <li class="li"><a href="/users/community">社区</a></li>
+                <li class="li"><a href="/users/login">登录</a></li>
+                <li class="li"><a href="/users/res">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav  class="header navbar navbar-default " id="login" style="display: none">
+    <div class="wrap container">
+        <div class=" logo2 navbar-header">
+            <a href="/" class="navbar-brand" style="margin: 0px;padding: 0px "><img src="/images/index-H/logo3.png" title="logo"/></a>
+            <button type="button" class="navbar-toggle toggle_btn-un" data-toggle="collapse" data-target="#navbar-collapse2">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class=" nav_BH collapse navbar-collapse" id="navbar-collapse2">
+            <ul class="nav navbar-nav navbar-right MyNavH" id="" style="margin-top: 0px">
+                <li class="active li_firstH"><a href="/">首页</a></li>
+                <li class="li"><a href="/contentData/noteIndex">游记</a></li>
+                <li class="li"><a href="/users/strategy">攻略</a></li>
+                <li class="li"><a href="/users/community">社区</a></li>
+                <li class="li li_my">
+                    <a style="padding:9px 25px;" href="/users/myhome_note" id='name' class="Index_NameH">
+                        <!--<img  src="/upload/sessionStorage.getItem(userPic)" alt="">-->
+                       <!-- <span id="name">欢迎您 sessionStorage.getItem(userName)</span>-->
+                    </a>
+                </li>
+                <li class="li"><a href="/users/logout">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--备份-->
+<!--<div class="header">
+    <div class="wrap">
+        <div class="logo">
+            <a href="/"><img src="/images/index-H/logo2.png" title="logo"/></a>
+        </div>
+        &lt;!&ndash;登录前导航&ndash;&gt;
+        <div class="top-nav ">
+            <ul>
+                <li class="active"><a href="/">首页</a></li>
+                <li ><a href="/contentData/noteIndex">游记</a></li>
+                <li><a href="/users/strategy">攻略</a></li>
+                <li><a href="/users/community">社区</a></li>
+                <li><a href="/users/login">登录</a></li>
+                <li><a href="/users/res">注册</a></li>
+            </ul>
+        </div>
+        &lt;!&ndash;登录后导航&ndash;&gt;
+        &lt;!&ndash;<div class="top-nav">
+            <ul>
+                <li class="active"><a href="/">首页</a></li>
+                <li ><a href="/contentData/noteIndex">游记</a></li>
+                <li><a href="/users/strategy">攻略</a></li>
+                <li><a href="/users/community">社区</a></li>
+                <li><a href="/users/login">欢迎 Control_HLL</a></li>
+                <li><a href="/users/res">退出</a></li>
+            </ul>
+        </div>&ndash;&gt;
+        <div class="clear"></div>
+    </div>
+</div>-->
+</body>
+</html>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/javascripts/index-H/jquery.min.js"></script>

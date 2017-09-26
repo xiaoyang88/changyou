@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <script src="/javascripts/jquery-3.1.0.js"></script>
+    <script src="/javascripts/nav_tab.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $.get('/users/Session',function (data,status) {
+                console.log('数据：'+data +"status"+status);
+                if(data==0){
+                    $("#nav_login1").show();
+                }
+                else{
+                    $("#nav_login2").show();
+                    $("#userpic").html(data)
+                }
+            })
+        })
+
+
+        function SelectUserPic(){
+            alert("1")}
+        window.onload=SelectUserPic() </script>
+
+</head>
+<body>
+<nav>
+    <div id="nav_container">
+        <!--logo-->
+        <div id="nav_logo">
+        </div>
+        <!--导航栏菜单-->
+        <div id="nav_menu">
+            <ul id="menu">
+                <li ><a href="/"  class="nav_on2">首页</a></li>
+                <li ><a href="/users/destination.ejs" >目的地</a></li>
+                <li ><a href="/users/strategy" >旅游攻略</a></li>
+                <li ><a href="/users/community" >社区</a></li>
+            </ul>
+        </div>
+        <!--导航栏-->
+        <div id="nav_login1" style="display:none">
+            <div id="weibo_login"><a href="#"></a></div>
+            <div id="qq_login"><a href="#"></a></div>
+            <div id="weixin_login"><a href="#"></a></div>
+                <span id="login_in">
+                    <a href="/users/login">登录</a>  |
+                    <a href="/users/res">注册</a>
+                </span>
+        </div>
+        <div id="nav_login2" style="display:none">
+            <div class="nav_login_pic" >
+                <div id="userpic">  <img src="/images/index_login_nav/nav_login_pic.gif" alt=""></div>
+
+                <ul class ="nav_dropdown">
+                    <li class ="nav_dropdown1 "><a href="">积分110</a></li>
+                    <a href="/users/myhome_note"><li class="dropdown">
+                            <span class ="nav_dropdown2"></span>我的
+                        </li></a>
+                    <a href="/contentData/writeNote"><li class="dropdown">
+                            <span class ="nav_dropdown2"></span>写游记
+                        </li></a>
+                    <a href=""><li class="dropdown">
+                            <div class ="nav_dropdown3"></div>我的问答
+                        </li></a>
+                    <a href=""><li class="dropdown">
+                            <div class ="nav_dropdown4"></div>我的收藏
+                        </li> </a>
+                    <a href="/users/personal_setting"><li class="dropdown">
+                            <div class ="nav_dropdown5"></div>设置
+                        </li></a>
+                    <a href="/users/logout"><li class="dropdown">
+                            <div class ="nav_dropdown6"></div>退出
+                        </li></a>
+                </ul>
+            </div>
+            <div class="icon_tri">
+            </div>
+        </div>
+    </div>
+</nav>
+</body>
+</html>

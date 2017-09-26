@@ -1,0 +1,83 @@
+
+body {
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    padding: 50px;
+    font-size: 16px;
+    background: url("/images/admi/adm_bg.jpg")no-repeat;
+}
+a:hover{
+    color: #FFA800;
+}
+p a{
+    color: #FFA800;
+    float: right;
+    margin-right: 35px;
+}
+#section{
+    /*background-color: #FFFFFF;*/
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: inset 0px 0px 10px rgba(255,255,255,0.5),0px 0px 15px rgba(75,75,75,0.5);
+    width: 410px;
+    height: 340px;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top:  90px;
+    border-radius: 8px;
+}
+#section-form h3{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px 0px 0px 150px ;
+}
+.form-group{
+    margin-left: 40px;
+    margin-right: 25px;
+    width: 320px;
+    line-height: 40px;
+}
+.form_icon1,.form_icon2{
+    width: 25px;
+    height: 22px;
+    padding-top: 20px;
+    background: url("/images/admi/adm_icon.png");
+    float: left;
+}
+.form_icon1{
+    position: relative;
+    top: 7px;
+    left: 40px;
+    background-position: 5px -50px;
+}
+.form_icon2{
+    position: relative;
+    top: 7px;
+    left: 43px;
+    background-position: -18px -50px;
+}
+.form-group input{
+    height: 40px;
+    width: 290px;
+    margin-top: 45px;
+    margin-left: 25px;
+    padding-left: 45px;
+    font-size: 14px;
+}
+#UserPwd{
+    margin-top: 20px;
+}
+#submit{
+    margin-top:25px;
+    width: 290px;
+    height: 38px;
+    margin-left:65px;
+    margin-right: 25px;
+    font-size: 14px;
+}
+#section-form{
+    width: 370px;
+    height: 40px;
+}
+#user_warn1{
+    color: red;
+    padding: 0px 0px 0px 66px;
+}

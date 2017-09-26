@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游记首页</title>
+    <link rel="stylesheet" href="/stylesheets/noteIndex.css">
+    <script src="/javascripts/index-H/jquery.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+    <style>
+        #page ul li{
+            float: left;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+<%- include ../util/header-Note.ejs %>
+<div class="container">
+        <div class="header_top">
+            <!-- <img class="div_img1" src="/images/noteIndex/index-1-header1.jpg">
+             <img class="div_img2" src="/images/noteIndex/index-1-header.jpg">
+             <a href="/contentData/writeNote">
+                 <div class="div_img3"><img src="/images/noteIndex/index-1-header2.jpg"></div>
+             </a>-->
+            <span class="top_span1">畅游</span>
+            <span style="color:  #3F9F5F">|</span>
+            <span class="top_span2">分享</span>
+            <span class="top_span3">.</span>
+            <span class="top_span4">找攻略</span>
+        </div>
+        <div class="header_top2">
+            <a href="/contentData/writeNote"><button>发游记</button></a>
+        </div>
+    <section>
+        <div class="section">
+            <% if(ShowWriteContent.length > 0){ %>
+            <% for(var i = 0;i <ShowWriteContent.length;i++) { %>
+            <div class="right_container">
+                <!--文章的位置-->
+                <div class="right">
+                    <!--头像-->
+                    <div class="right_top">
+                        <div class="icon">
+                            <a id="righta" href="/users/otherhome_note?username=<%- ShowWriteContent[i].UserName %>">
+                                <img src="/upload/<%- ShowWriteContent[i].UserPic %>" alt="">
+                            </a>
+                        </div>
+                        <div class="time">
+                            <a href="/users/otherhome_note?username=<%- ShowWriteContent[i].UserName %>">
+                                <span class="span1"><%- ShowWriteContent[i].UserName %></span>
+                            </a>
+                            <span class="span2">发表于<%- ShowWriteContent[i].TravelNoteTime %></span>
+                        </div>
+                    </div>
+                    <div class="right_bottom">
+                        <!--标题-->
+                        <div class="right_bottom_left">
+                            <a href="/contentData/noteInfoShow?noteId=<%= ShowWriteContent[i].TravelNoteId %>">
+                                <p class="p1"><%- ShowWriteContent[i].Tname %></p>
+                            </a>
+                            <div class="note_Content">
+                                <%- ShowWriteContent[i].TrvaelContnet %>
+                            </div>
+                        </div>
+                        <div class="right_bottom_right"><img src="/upload/<%= ShowWriteContent[i].Notepic[0] %>" alt="">
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+                <% } %>
+            </div>
+        </div>
+        <div id="page">
+            <ul style=" list-style:none;" >
+                <%if(CurrentPage!=1){%>
+                <li>
+                    <a href="/contentData/noteIndex?page=1">首页</a>
+                </li>
+                <li>
+                    <a href=/contentData/noteIndex?page=<%= (CurrentPage-1)%>>上一页</a>
+                </li>
+                <%}else {%>
+                <li>
+                    首页
+                </li>
+                <li>
+                    上一页
+                </li>
+                <%}%>
+
+
+                <%for(var i=1;i<=countpage;i++){%>
+                <li>
+                    <a href="/contentData/noteIndex?page=<%= i%>"><%= i%></a>
+                </li>
+
+                <%}%>
+
+                <%if(CurrentPage!=countpage){%>
+                <li>
+                    <a href=/contentData/noteIndex?page=<%= (CurrentPage+1)%>>下一页</a>
+                </li>
+                <li>
+                    <a href=/contentData/noteIndex?page=<%= countpage%>>末页</a>
+                </li>
+                <%}else {%>
+                <li>
+                    下一页
+                </li>
+                <li>
+                    末页
+                </li>
+                <%}%>
+                <li>
+                    共<%= all.length%>条数据，<%= CurrentPage%>页/<%= countpage%>页
+                </li>
+
+
+            </ul>
+
+        </div>
+
+
+</section>
+</div>
+<script src="/javascripts/jquery-3.1.0.js"></script>
+</body>
+<%- include ../util/footer.ejs %>
+</html>

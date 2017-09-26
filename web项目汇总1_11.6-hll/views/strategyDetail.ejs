@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>畅游</title>
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/stylesheets/strategyDetail.css">
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/jquery-3.1.0.js"></script>
+    <script src="/javascripts/strategy_num1.js"></script>
+    <script src="/javascripts/v1script.js"></script>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/SelectUserPic.js"></script>
+    <script>
+        window.onload=SelectUserPic()
+    </script>
+</head>
+<body onload="bg_show1()"style="background-color: white">
+<header>
+    <!--导航栏-->
+    <%- include ../util/header-Stragety.ejs%>
+</header>
+<div class="container clearfix">
+    <section id="section">
+       <div class="tops">
+           <img src="/images/ueditor/<%- strategyDetailShowData[0].StraPicDao[0]%>"  height="300px" alt="">
+       </div>
+        <div class="sub_th">
+                <div class="crumbs ">
+                    <a class="sub_ths" href="">攻略首页</a>
+                    &gt;
+                    <a href="" class="current"><%- strategyDetailShowData[0].StrategyName%></a>
+                </div>
+        </div>
+        <% if(strategyDetailShowData.length>0){%>
+        <% for(var i=0;i<strategyDetailShowData.length;i++) { %>
+        <div class="like"><p style="color:#06B540 ">畅游攻略</p>上传于&nbsp;&nbsp;&nbsp;&nbsp;<%- strategyDetailShowData[i].StrategyNoteTime%></div>
+        <div class="title1"><strong><%- strategyDetailShowData[0].StrategyName%></strong></div>
+        <div class="hr"><hr></div>
+
+            <div class="con wrap_strategyDetail">
+                <div class="th">
+                    <p class="an" style="font-size: 16px"><%- strategyDetailShowData[i].StrategyProfile%></p>
+                </div>
+                <div class="bd">
+                        <div   id="topic_0" name="topic_0">
+                            <div class="theme">
+                               <p ><%- strategyDetailShowData[i].StrategyContent%></p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+        <% }%>
+        <% }%>
+
+        <div class="section_content_right">
+            <div class="share" id="Collect_X">
+                <div  title="分享" class="shares">收藏</div>
+            </div>
+            <div class="collect" id="Praise_X">
+                <div title="收藏" class="collects" data-id="341">点赞
+                    <span class="favorite_num"></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+</body>
+</html>

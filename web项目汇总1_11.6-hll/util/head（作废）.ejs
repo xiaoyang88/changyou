@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/head.css">
+    <script src="/javascripts/jquery-3.1.0.js"></script>
+    <!--<script>
+        $(document).ready(function () {
+            $.get('/users/Session',function (data,status) {
+                console.log('数据：'+data +"status"+status);
+                if(data==0){
+                    $("#nav_login1").show();
+                }
+                else{
+                    $("#nav_login2").show();
+                }
+            })
+        })
+    </script>-->
+</head>
+<body>
+<nav>
+    <div id="nav_container">
+        <div id="nav_menu">
+            <ul>
+                <li ><a href="/" >首页</a></li>
+                <li><a href="/users/Community" >问答</a></li>
+
+                <li><a href="/users/mallshow" >积分兑换</a></li>
+            </ul>
+        </div>
+        <div id="nav_login1" style="display: none">
+            <div id="weibo_login"><a href="#"></a></div>
+            <div id="qq_login"><a href="#"></a></div>
+            <div id="weixin_login"><a href="#"></a></div>
+                <span id="login_in">
+                    <a href="#">登录</a>  |
+                    <a href="#">注册</a>
+                </span>
+        </div>
+        <div id="nav_login2" style="display:none">
+            <div class="nav_login_pic">
+                <ul class="nav_ul" id="nav_ul">
+                    <li class="nav_lii"><a href="">积分110</a></li>
+                    <a href="/users/myhome_note">
+                        <li class="nav_lii1"><span class="nav_span1"></span>我的</li>
+                    </a>
+                    <a href="/contentData/writeNote">
+                        <li class="nav_lii1"><span class="nav_span1"></span>写游记</li>
+                    </a>
+                    <a href="">
+                        <li class="nav_lii1"><span class="nav_span2"></span>我的问答</li>
+                    </a>
+                    <a href="">
+                        <li class="nav_lii1"><span class="nav_span3"></span>我的收藏</li>
+                    </a>
+                    <a href="/users/personal_setting">
+                        <li class="nav_lii1"><span class="nav_span4"></span>设置</li>
+                    </a>
+                    <a href="/users/logout">
+                        <li class="nav_lii1"><span class="nav_span5"></span>退出</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="icon_tri"></div>
+        </div>
+    </div>
+</nav>
+
+<script src="/javascripts/jquery-3.1.0.js"></script>
+</body>
+</html>

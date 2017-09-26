@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/personal_index1.css" type="text/css">
+    <link  rel="stylesheet" href="/stylesheets/main.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/sinaFaceAndEffec.css" />
+    <script src="/javascripts/jquery-3.1.0.js"></script>
+    <script src="/javascripts/personal_index1.js"></script>
+</head>
+<body>
+<%- include ../util/nav.ejs%>
+<section>
+    <% if(ShowWriteContent.length>0){%>
+    <div >
+        <div class="section_top">
+            <% for(var i=0;i<ShowWriteContent.length;i++) { %>
+            <div class="section_top_title">
+                <h1><%- ShowWriteContent[i].Tname%></h1>
+            </div>
+        </div>
+        <div class="section_navbar">
+            <!--头像-->
+            <div class="person"><img src="/images/personal_index1/person1.jpeg" alt=""></div>
+            <div class="person_name">
+                <p><%- ShowWriteContent[i]. Username%> <span><%- ShowWriteContent[i].TravelNoteTime%></span></p>
+            </div>
+            <!--收藏，分享-->
+            <div class="share">
+                <div class="share_icon"></div>
+                <span>123分享</span>
+                    <ul class="share_menu">
+                        <li><a href=""><img src="/images/personal_index1/weibo.png" alt=""></a></li>
+                        <li><a href=""><img src="/images/personal_index1/kongjian.png" alt=""></a></li>
+                        <li><a href=""><img src="/images/personal_index1/weixin.png" alt=""></a></li>
+                    </ul>
+            </div>
+            <div class="collect">
+                <div class="collect_icon"></div>
+                <span>230收藏</span>
+            </div>
+        </div>
+        <%- ShowWriteContent[i].Tcontent%>
+        <div class="section_bottom">
+            <div class="section_comment">评论</div>
+            <div class="comment_content">
+            </div>
+        </div>
+    </div >
+    <% }%>
+    <% }%>
+</section>
+<%- include ../util/footer.ejs%>
+</body>
+</html>

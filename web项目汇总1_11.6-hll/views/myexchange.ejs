@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的兑换</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/myexchange.css" type="text/css">
+    <script src="/javascripts/jquery-3.1.0.js"></script>
+
+    <script  src="/javascripts/myexchange.js"></script>
+
+
+
+    </head>
+<body>
+<%- include ../util/header-jifen.ejs%>
+<div id="header">
+
+</div>
+<hr>
+<div id="form-c">
+    <div>
+        <div id="pic-1">订单结算信息</div>
+
+        <div id="con">
+            <div class="con1">商品图片</div>
+            <div class="con2">商品信息</div>
+            <div class="con2">积分</div>
+           <div class="con4">数量</div>
+        </div>
+    </div>
+    <hr style="width:100%;">
+    <% if(goodscart.length > 0){ %>
+    <div id="goods-con">
+
+        <div class="goods-con1">
+            <div class="goods-con1-1"></div>
+            <div class="goods-con1-2"><img src="/upload/<%=goodscart[0].GoodPic%>" width="160px" height="120px"></div>
+        </div>
+         <div class="goods-con2"><%=goodscart[0].GoodName%></div>
+         <div class="goods-con3"><%=goodscart[0].GoodIntegral%></div>
+        <div class="goods-con4">1</div>
+
+    </div>
+    </div>
+    <%}%>
+    <div class="get_address"><span >收货地址</span></div>
+    <hr style="width:80%;">
+
+    <div class="good_address">
+        <form role="form" id="AdressContent">
+            <input type="text" value="<%=goodscart[0].GoodIntegral%>" class="none" name="GoodIntegral">
+            <input type="text" value="<%=goodscart[0].GoodName%>"  class="none" name="goodsName">
+            <input type="text" value="<%=goodscart[0].GoodId%>"  class="none" name="goodsId">
+        <div class="good_address1"><span style="font-size: 18px;">收件人：</span><br><input type="text" id="userId" name="userId" placeholder="请输入收件人" required="required">
+       </div>
+        <div class="good_address2"><span style="font-size: 18px;">收货地址：</span><br>
+            <input type="text" id="userAdress" name="userAdress" placeholder="请输入收货地址" required="required"></div>
+            <div class="good_address4">  <span style="font-size: 18px;">邮编: </span><br>
+                <input type="text" id="userCode" name="userCode" placeholder="请输入邮编" required="required"></div>
+
+
+        <div class="good_address3"><span style="font-size: 18px;">联系电话：</span><br>
+            <input type="text" id="userTel" name="userTel" placeholder="请输入联系电话" required="required"></div>
+
+
+   <input   type="button" value="确认兑换"  onclick="MyOrder()" class="success_btn" >
+</form>
+    </div>
+</body>
+
+</html>

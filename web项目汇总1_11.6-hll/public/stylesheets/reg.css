@@ -1,0 +1,94 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{
+    font-family:  Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    text-align:center;
+    background: url("../images/login_register/login_regi_bg.jpg") no-repeat;
+}
+.logo_Div img {
+    width:150px;
+    height: 53px;
+    margin-top:90px;
+}
+
+.form-div{
+    border-radius:10px; border:1px solid #aaa;
+    width: 370px;
+    margin:auto;
+    margin-top:15px;
+    margin-bottom: 40px;
+    padding:50px 0px 70px 0px;
+    background-color: rgba(255,255,255,1);
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.9), 0px 0px 20px rgba(75, 75, 75, 1);
+
+}
+.input_div_H {
+    border: 1px solid #06B540;
+    width: 280px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 40px;
+    border-radius: 5px;
+    text-align: right;
+}
+.input_div_H_err1{
+    border: 1px solid red;
+}
+.input_div_H_err2{
+    border: 1px solid #06B540;
+}
+.input_userId_H {
+    width: 90px;
+    float: left;
+    padding-left: 15px;
+}
+.input_div_H input {
+    height: 30px;
+    width: 170px;
+    font-size: 14px;
+    border: 1px solid #FFF;
+}
+input {
+    outline: none;
+}
+#UserIdMessage,#PwdMessage,#TelMessage,#PwdMessage2{
+    height: 20px;
+    text-align: left;
+    padding: 5px 0px 0px 45px;
+    margin-bottom: 10px;
+}
+.onError{
+    font-size: 14px;
+    color: red;
+}
+.onSuccess{
+    font-size: 14px;
+    color: green;
+}
+#sub {
+    width: 280px;
+    height: 40px;
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #06B540;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+#sub:hover{
+    background-color:#40C895;
+}
+.backIndex {
+    float: right;
+    margin-top: 15px;
+    margin-right: 45px;
+}
+.backIndex a {
+    color:  #06B540;
+}
+.backIndex a:hover{
+    text-decoration: underline;
+}
